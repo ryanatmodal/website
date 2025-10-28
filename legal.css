@@ -1,0 +1,98 @@
+/* 404 Page */
+.error-404 {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.error-404-graphic {
+    font-size: 10rem;
+    font-weight: 800;
+    background: linear-gradient(270deg, var(--accent), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2rem;
+}
+
+.error-404 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.error-404 p {
+    font-size: 1.25rem;
+    color: var(--gray);
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+/* Careers */
+.careers-container {
+    padding: 8rem 2rem 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.job-listing {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s;
+}
+
+.job-listing:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.job-listing h3 {
+    font-size: 1.5rem;
+    color: var(--dark);
+}
+
+.job-meta {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Legal Pages */
+.legal-container {
+    padding: 8rem 2rem 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.legal-container h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.legal-container p {
+    color: var(--gray);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.legal-container ul {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.legal-container li {
+    color: var(--gray);
+    margin-bottom: 0.5rem;
+}

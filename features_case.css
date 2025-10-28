@@ -1,0 +1,132 @@
+/* Features */
+.features {
+    padding: 6rem 8rem;
+    background: white;
+}
+
+.features-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    color: var(--dark);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(147, 201, 232, 0.2);
+    transition: all 0.3s;
+}
+
+.feature-card:nth-child(1) {
+    background: linear-gradient(135deg, rgba(147, 201, 232, 0.1) 0%, transparent 100%);
+}
+
+.feature-card:nth-child(2) {
+    background: linear-gradient(135deg, rgba(233, 175, 88, 0.1) 0%, transparent 100%);
+    border-color: rgba(233, 175, 88, 0.2);
+}
+
+.feature-card:nth-child(3) {
+    background: linear-gradient(135deg, rgba(147, 201, 232, 0.1) 0%, transparent 100%);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 1.5rem;
+}
+
+.feature-card:nth-child(1) .feature-icon {
+    background: var(--accent);
+}
+
+.feature-card:nth-child(2) .feature-icon {
+    background: var(--primary);
+}
+
+.feature-card:nth-child(3) .feature-icon {
+    background: var(--accent);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.feature-card p {
+    color: var(--gray);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.features-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Case Studies */
+.case-study {
+    max-width: 1200px;
+    margin: 0 auto 6rem;
+    padding: 3rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.case-study h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.case-study-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(147, 201, 232, 0.3) 0%, rgba(233, 175, 88, 0.3) 100%);
+    border-radius: 12px;
+}
+
+.case-stat {
+    text-align: center;
+}
+
+.case-stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.case-stat-label {
+    color: var(--gray);
+    font-size: 0.95rem;
+}
