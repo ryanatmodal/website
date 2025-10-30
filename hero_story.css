@@ -162,11 +162,14 @@ h1 {
 
 /* Story Box */
 .story-box {
+    display: flex;
+    align-items: center;
     background: linear-gradient(135deg, rgba(147, 201, 232, 0.3) 0%, rgba(233, 175, 88, 0.3) 100%);
     padding: 3rem;
     border-radius: 20px;
-    margin: 4rem auto;
+    margin: 4rem 8rem;
     max-width: var(--max-width);
+    gap: 2rem;
 }
 
 .story-box h2 {
@@ -178,5 +181,4 @@ h1 {
 .story-box p {
     color: var(--gray);
     font-size: 1.1rem;
-    line-height: 1.8;
 }
