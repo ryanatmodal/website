@@ -57,6 +57,13 @@ h1 {
     background-clip: text;
 }
 
+.gradient-bold {
+    background: linear-gradient(90deg, var(--primary), var(--dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .hero p {
     font-size: 1.3rem;
     color: var(--gray);

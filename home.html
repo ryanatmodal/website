@@ -67,8 +67,8 @@
                         <a href="#" onclick="showPage('case-studies')" class="stat-link">See how MARTA did it →</a>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">XYZ</div>
-                        <div class="stat-label">Michigan stat</div>
+                        <div class="stat-number">3 min</div>
+                        <div class="stat-label">average wait time</div>
                         <a href="#" onclick="showPage('case-studies')">
                             <img src="Static/um_logo.png" alt="University of Michigan" class="stat-logo" onerror="this.style.display='none'">
                         </a>
@@ -89,7 +89,7 @@
         <div class="story-box">
             <div style="flex: 0 0 70%;">
                 <h2>Our Story: Born from Research</h2>
-                <p>Modal was born from <a href="#" onclick="showPage('research')">8 years of cutting-edge transit research</a> at Georgia Tech, the University of Michigan, and a national Artificial Intelligence Institute. Our team of researchers developed the algorithms and optimization techniques that power modern on-demand transit.</p><br>
+                <p>Modal was born from <a href="#" onclick="showPage('research')">8 years of cutting-edge research</a> at Georgia Tech, the University of Michigan, and a national Artificial Intelligence Institute. Our team of researchers developed the algorithms and optimization techniques that power modern on-demand transit.</p><br>
                 <p>Our research wasn't just conceptual - <a href="#" onclick="showPage('research')">we piloted $5M in successful research deployments</a>, working with transit agencies every step of the way. After the success of our pilots, the team founded Modal to take our innovation to every city.</p>
             </div>
             <div style="flex: 0 30%;">
@@ -396,32 +396,39 @@
         <div class="company-container">
             <div class="mission-section">
                 <h1>Why Choose Modal?</h1>
-                <p>We're not just another software provider. We're your partner in transforming public transit for the modern era.</p>
+                <p>How we stand out from the rest.</p>
             </div>
 
-            <div class="value-card" style="max-width: 1000px; margin: 0 auto 4rem; padding: 3rem;">
-                <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🚇 Multimodal, not Microtransit</h3>
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">Multimodal transportation integrates multiple forms of transit—buses, trains, ride-sharing, bikes, and more—into a seamless network. Unlike microtransit, which focuses solely on small-vehicle on-demand service, multimodal solutions provide riders with comprehensive journey planning that combines the best of fixed-route reliability with on-demand flexibility. This approach maximizes coverage, minimizes costs, and provides riders with more options to get where they need to go.</p>
+            <div class="value-card">
+                <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">Multimodal, not Microtransit</h3>
+                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8;">
+                    Microtransit is, well, micro.  While microtransit focuses on direct on-demand service in small areas, it falls apart (and gets really expensive) at scale.<br><br>
+                    On the other hand, while fixed-route transit is cheaper and highly efficient, it's nowhere near as convenient.  You have to get to and from the fixed routes yourself - which is a major barrier to use.<br><br>
+                    Multimodal combines the best of on-demand flexibility with fixed-route efficiency by integrating <b>on-demand transit</b> and <b>fixed route transit</b> (buses, rail, and more) into the <b>same network</b>.</p>
                 
                 <div class="comparison-grid">
-                    <div class="comparison-box">
-                        <h3>Multimodal</h3>
-                        <div class="comparison-image">🚇🚌🚲</div>
-                        <p style="color: var(--gray); font-size: 0.95rem;">Integrated network connecting multiple transit modes for optimal coverage and efficiency</p>
+                    <div class="comparison-box-better">
+                        <h3 class="gradient-bold">Multimodal</h3>
+                        <img src="Static/multimodal.svg" alt="Multimodal" style="display: block; width: 100%; height: auto;">
+                        <p class="comparison-caption">On-demand vehicles service the first</p>
                     </div>
                     <div class="comparison-box">
                         <h3>Microtransit</h3>
-                        <div class="comparison-image">🚐</div>
-                        <p style="color: var(--gray); font-size: 0.95rem;">Single-mode on-demand service with limited integration</p>
+                        <img src="Static/microtransit.svg" alt="Microtransit" style="display: block; width: 100%; height: auto;">
+                        <p class="comparison-caption">Direct shuttle trips</p>
                     </div>
                 </div>
+                
+                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8;">
+                    Multimodal transportation integrates multiple forms of transit—buses, trains, ride-sharing, bikes, and more—into a seamless network. Unlike microtransit, which focuses solely on small-vehicle on-demand service, multimodal solutions provide riders with comprehensive journey planning that combines the best of fixed-route reliability with on-demand flexibility. This approach maximizes coverage, minimizes costs, and provides riders with more options to get where they need to go.
+                </p>
                 
                 <div style="text-align: center; margin-top: 2rem;">
                     <a href="#" onclick="showPage('research')" class="btn-secondary">See the Research →</a>
                 </div>
             </div>
 
-            <div class="value-card" style="max-width: 1000px; margin: 0 auto 4rem; padding: 3rem;">
+            <div class="value-card">
                 <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🧮 Superior Optimization (No, Really)</h3>
                 <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">As a research spinout from Georgia Tech, University of Michigan, and the NSF AI4OPT Institute, our optimization algorithms are peer-reviewed and published in top academic journals. We're not just claiming to be better—our competitors cite our research in their own papers. Our routing engine is built on years of academic research and validated through real-world deployments, giving you provably superior performance.</p>
                 
@@ -430,7 +437,7 @@
                 </div>
             </div>
 
-            <div class="value-card" style="max-width: 1000px; margin: 0 auto 4rem; padding: 3rem;">
+            <div class="value-card">
                 <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🔧 All in One</h3>
                 <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">Unlike competitors who piece together separate products, Modal offers everything as a single, integrated platform. This means consistent software updates, unified user experience, and no integration headaches. Your riders, drivers, and dispatchers all work within a cohesive ecosystem designed to work together seamlessly. This integration isn't just convenient—it fundamentally improves service quality and operational efficiency.</p>
                 
@@ -439,7 +446,7 @@
                 </div>
             </div>
 
-            <div class="value-card" style="max-width: 1000px; margin: 0 auto 4rem; padding: 3rem;">
+            <div class="value-card">
                 <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🎓 World-Class Talent</h3>
                 <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">We directly recruit from top research labs at Georgia Tech, University of Michigan, and the NSF AI Institute. Our team is small, specialized, and high-performance—many of us have worked together for years in academic research before founding Modal. 60% of our team holds PhDs in optimization, computer science, and transportation engineering. When you work with Modal, you're getting world-class expertise applied to your transit challenges.</p>
                 
