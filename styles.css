@@ -19,6 +19,10 @@ body {
     color: var(--dark);
 }
 
+a {
+    color: var(--gray)
+}
+
 a:visited {
     color: inherit;
 }
@@ -42,7 +46,7 @@ nav {
 }
 
 .logo {
-    height: 37px;
+    height: 35px;
     display: flex;
 }
 
