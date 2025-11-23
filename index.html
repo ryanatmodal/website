@@ -16,112 +16,219 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#" onclick="showPage('home')">
-                <img src="modal_logo.png" alt="Modal" class="logo">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#" onclick="showPage('home')">Home</a></li>
-                <li class="dropdown">
-                    <a href="#" onclick="showPage('product')">Product</a>
-                    <div class="dropdown-content">
-                        <a href="#" onclick="showPage('product')">Product</a>
-                        <a href="#" onclick="showPage('case-studies')">Case Studies</a>
-                        <a href="#" onclick="showPage('research')">Research</a>
-                    </div>
-                </li>
-                <li><a href="#" onclick="showPage('pricing')">Pricing</a></li>
-                <li><a href="#" onclick="showPage('why-modal')">Why Modal</a></li>
-                <li><a href="#" onclick="showPage('company')">Company</a></li>
-                <li><a href="#" onclick="showPage('contact')" class="cta-button">Talk to Us</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Home Page -->
+    <div id="main-header-placeholder"></div>
     <div id="home" class="page-content active">
         <section class="hero">
             <div class="hero-content">
-                <h1>Transform Your<br><span class="gradient-text">Transit Operations</span></h1>
-                <p>Enterprise-grade mobility platform powering on-demand multimodal transit for transit providers everywhere.</p>
+                <h1>Microtransit is <span class="circled">Expensive</span></h1>
+                <p>Transit providers are under pressure to serve the most people with limited resources.</p>
+                <p>But transit today leaves providers stuck between two bad options:</p>
                 
-                <div class="button-group">
-                    <a href="#" onclick="showPage('contact')" class="btn-primary">
-                        Request a Demo
-                        <span>→</span>
-                    </a>
-                    <a href="#" onclick="showPage('case-studies')" class="btn-secondary">
-                        See the Numbers
-                        <span>→</span>
-                    </a>
+                <div class="comparison-grid">
+                    <div class="comparison-box">
+                        <h3>Fixed Route (Bus, Rail)</h3>
+                        <img src="Static/fixed_route_wide.svg" alt="Fixed Routes">
+                        <div class="comparison-caption">
+                            <div class="icon-line">
+                                <svg class="icon-x" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/>
+                                </svg>
+                                <span><b>No first/last mile</b></span>
+                            </div>
+                            <div class="icon-line">
+                                <svg class="icon-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                <span><b>Inexpensive ($)</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-box">
+                        <h3>Microtransit</h3>
+                        <img src="Static/microtransit_wide.svg" alt="Microtransit">
+                        <div class="comparison-caption">
+                            <div class="icon-line">
+                                <svg class="icon-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                <span><b>On-demand</b></span>
+                            </div>
+                            <div class="icon-line">
+                                <svg class="icon-x" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/>
+                                </svg>
+                                <span><b>Very expensive ($$$$)</b></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <h2>Modal changes that:</h2>
+                
+                <div class="comparison-grid">
+                    <div class="comparison-box">
+                        <h3>Multimodal</h3>
+                        <img src="Static/multimodal_wide.svg" alt="Multimodal">
+                        <div class="comparison-caption">
+                            <div class="icon-line">
+                                <svg class="icon-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                <span><b>On-demand</b></span>
+                            </div>
+                            <div class="icon-line">
+                                <svg class="icon-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                <span><b>Affordable ($$)</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 2rem;">Multimodal uses shuttles only for the first and last mile, connecting riders to high-capacity, cost-efficient buses for the majority of their trip.</p>
+                <p style="margin-top: 2rem;"><b>Multimodal isn't new, but our optimization is.</b></p>
 
-                <div class="stats">
-                    <div class="stat">
-                        <div class="stat-number">66%</div>
-                        <div class="stat-label">month over month ridership increase</div>
-                        <a href="#" onclick="showPage('case-studies')">
-                            <img src="Static/marta_logo.png" alt="MARTA" class="stat-logo" onerror="this.style.display='none'">
-                        </a>
-                        <a href="#" onclick="showPage('case-studies')" class="stat-link">See how MARTA did it →</a>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">3 min</div>
-                        <div class="stat-label">average wait time</div>
-                        <a href="#" onclick="showPage('case-studies')">
-                            <img src="Static/um_logo.png" alt="University of Michigan" class="stat-logo" onerror="this.style.display='none'">
-                        </a>
-                        <a href="#" onclick="showPage('case-studies')" class="stat-link">See how Michigan did it →</a>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">XYZ</div>
-                        <div class="stat-label">Savannah stat</div>
-                        <a href="#" onclick="showPage('case-studies')">
-                            <img src="Static/cat_logo.png" alt="CAT" class="stat-logo" onerror="this.style.display='none'">
-                        </a>
-                        <a href="#" onclick="showPage('case-studies')" class="stat-link">See how CAT did it →</a>
-                    </div>
-                </div>
+            <div class="button-group">
+                <a href="#" onclick="showPage('contact')" class="btn-primary">
+                    Request a Demo
+                    <span>→</span>
+                </a>
+                <a href="#" onclick="showPage('case-studies')" class="btn-secondary">
+                    See the Numbers
+                    <span>→</span>
+                </a>
             </div>
+            
+            </div>
+
         </section>
 
         <div class="story-box">
-            <div style="flex: 0 0 70%;">
-                <h2>Our Story: Born from Research</h2>
-                <p>Modal was born from <a href="#" onclick="showPage('research')">8 years of cutting-edge research</a> at Georgia Tech, the University of Michigan, and a national Artificial Intelligence Institute. Our team of researchers developed the algorithms and optimization techniques that power modern on-demand transit.</p><br>
-                <p>Our research wasn't just conceptual - <a href="#" onclick="showPage('research')">we piloted $5M in successful research deployments</a>, working with transit agencies every step of the way. After the success of our pilots, the team founded Modal to take our innovation to every city.</p>
+            <h2>Our Story: 8 Years of Research with Transit Agencies</h2>
+            <div style="display: flex; gap: 20px;">
+                <div style="flex: 0 0 70%;">
+                    <p>Modal was born from <a href="#" onclick="showPage('research')">8 years of cutting-edge research</a> at Georgia Tech and the University of Michigan to solve a single problem: how to make on-demand transit affordable for transit agencies. Together with agency experts, our team of researchers developed the algorithms and optimization techniques that power modern on-demand transit.</p><br>
+                    <p>This wasn't just conceptual - <a href="#" onclick="showPage('research')">across $5M in pilots</a>, we worked side-by-side with transit professionals to learn, improve, and test our technology in real communities. The strong success of these partnerships inspired us to found Modal, so we can bring affordable on-demand to every city.</p>
+                </div>
+                <div style="flex: 0 0 30%;">
+                    <img src="Static/modal_placeholder.png" alt="Modal Founders" style="display: block; width: 100%; height: auto; border-radius: 12px;">
+                </div>
             </div>
-            <div style="flex: 0 30%;">
-                <img src="Static/modal_placeholder.png" alt="Modal Founders" style="display: block; width: 100%; height: auto;">
+        </div>
+
+        <div style="justify-content: center;">
+            <h2 class="section-title">Case Studies</h2>
+            <div class="stats">
+                <a href="#" onclick="showPage('case-studies')" class="no-underline">
+                    <div class="stat">
+                        <img src="Static/marta_logo.png" alt="MARTA" class="stat-logo" onerror="this.style.display='none'">
+                        <div class="stat-number">66%</div>
+                        <div class="stat-label">average ridership growth each month</div>
+                        <p class="stat-link">See how MARTA did it →</p>
+                    </div>
+                </a>
+                <a href="#" onclick="showPage('case-studies')" class="no-underline">
+                    <div class="stat">
+                        <img src="Static/um_logo.png" alt="University of Michigan" class="stat-logo" onerror="this.style.display='none'">
+                        <div class="stat-number">3 min</div>
+                        <div class="stat-label">average wait time</div>
+                        <p class="stat-link">See how Michigan did it →</p>
+                    </div>
+                </a>
+                <a href="#" onclick="showPage('case-studies')" class="no-underline">
+                    <div class="stat">
+                        <img src="Static/cat_logo.png" alt="CAT" class="stat-logo" onerror="this.style.display='none'">
+                        <div class="stat-number">XYZ</div>
+                        <div class="stat-label">Savannah stat</div>
+                        <p class="stat-link">See how CAT did it →</p>
+                    </div>
+                </a>
             </div>
+
         </div>
 
         <section class="features">
             <div class="features-container">
-                <h2 class="section-title">Everything You Need in One Platform</h2>
+                <h2 class="section-title">Use Cases</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">🚌</div>
-                        <h3>Smart Routing</h3>
-                        <p>AI-powered optimization for maximum efficiency</p>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                            </svg>
+                        </div>
+                        <h3>Affordable On-Demand</h3>
+                        <p>3-5x lower cost per rider than Microtransit</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">📱</div>
-                        <h3>Mobile First</h3>
-                        <p>Beautiful apps for riders and drivers</p>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                            </svg>
+                        </div>
+                        <h3>Paratransit & Comingling</h3>
+                        <p>ADA-compliant demand response operations</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>Analytics</h3>
-                        <p>Real-time insights for better decisions</p>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6l-6-2-6 2v14l6-2 6 2 6-2V4l-6 2zm0 2v10l-6-2V6l6 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Expand Service Area</h3>
+                        <p>Serve areas where bus service isn't feasible</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z"/>
+                            </svg>
+                        </div>
+                        <h3>Reduce Fixed Route Cannibalization</h3>
+                        <p>Riders use fixed routes when possible</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                        </div>
+                        <h3>Increase Ridership</h3>
+                        <p>Convenient transit attracts more riders</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                            </svg>
+                        </div>
+                        <h3>Boost Fixed Routes</h3>
+                        <p>Shuttles funnel riders to core bus and rail</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                            </svg>
+                        </div>
+                        <h3>Easier Commuting</h3>
+                        <p>45% of our rides were commuters</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                            </svg>
+                        </div>
+                        <h3>Improve Equity</h3>
+                        <p>Serve riders with limited access to transit</p>
                     </div>
                 </div>
                 <div class="features-cta">
-                    <a href="#" onclick="showPage('product')" class="btn-secondary">
-                        Explore All Features
-                        <span>→</span>
+                    <a href="#" onclick="showPage('research')" class="btn-secondary">
+                        See the Research<span>→</span>
                     </a>
                 </div>
             </div>
@@ -305,8 +412,16 @@
             </div>
 
             <div class="story-box">
-                <h2>Our Story: Born from Research</h2>
-                <p>Modal was born from cutting-edge research at Georgia Tech and the University of Michigan, backed by the NSF AI Institute for Advances in Optimization (AI4OPT). Our team of researchers spent years developing the algorithms and optimization techniques that power modern on-demand transit. We're not just building software—we're bringing decades of academic research and real-world pilot deployments into a production-ready platform that agencies can trust.</p>
+                <h2>Our Story: 8 Years of Research with Transit Agencies</h2>
+                <div style="display: flex; gap: 20px;">
+                    <div style="flex: 0 0 70%;">
+                        <p>Modal was born from <a href="#" onclick="showPage('research')">8 years of cutting-edge research</a> at Georgia Tech and the University of Michigan to solve a single problem: how to make on-demand transit affordable for transit agencies. Together with agency experts, our team of researchers developed the algorithms and optimization techniques that power modern on-demand transit.</p><br>
+                        <p>This wasn't just conceptual - <a href="#" onclick="showPage('research')">across $5M in pilots</a>, we worked side-by-side with transit professionals to learn, improve, and test our technology in real communities. The strong success of these partnerships inspired us to found Modal, so we can bring affordable on-demand to every city.</p>
+                    </div>
+                    <div style="flex: 0 0 30%;">
+                        <img src="Static/modal_placeholder.png" alt="Modal Founders" style="display: block; width: 100%; height: auto; border-radius: 12px;">
+                    </div>
+                </div>
             </div>
 
             <div class="case-study-stats" style="max-width: 1200px; margin: 4rem auto;">
@@ -404,8 +519,8 @@
                 <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">Multimodal, not Microtransit</h3>
                 <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8;">
                     Microtransit is, well, micro.  While microtransit focuses on direct on-demand service in small areas, it falls apart (and gets really expensive) at scale.<br><br>
-                    On the other hand, while fixed-route transit is cheaper and highly efficient, it's nowhere near as convenient.  You have to get to and from the fixed routes yourself - which is a major barrier to use.<br><br>
-                    Multimodal combines the best of on-demand flexibility with fixed-route efficiency by integrating <b>on-demand transit</b> and <b>fixed route transit</b> (buses, rail, and more) into the <b>same network</b>.</p>
+                    On the other hand, while fixed route transit is cheaper and highly efficient, it's nowhere near as convenient.  You have to get to and from the fixed routes yourself - which is a major barrier to use.<br><br>
+                    Multimodal combines the best of on-demand flexibility with fixed route efficiency by integrating <b>on-demand transit</b> and <b>fixed route transit</b> (buses, rail, and more) into the <b>same network</b>.</p>
                 
                 <div class="comparison-grid">
                     <div class="comparison-box-better">
@@ -421,7 +536,7 @@
                 </div>
                 
                 <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8;">
-                    Multimodal transportation integrates multiple forms of transit—buses, trains, ride-sharing, bikes, and more—into a seamless network. Unlike microtransit, which focuses solely on small-vehicle on-demand service, multimodal solutions provide riders with comprehensive journey planning that combines the best of fixed-route reliability with on-demand flexibility. This approach maximizes coverage, minimizes costs, and provides riders with more options to get where they need to go.
+                    Multimodal transportation integrates multiple forms of transit—buses, trains, ride-sharing, bikes, and more—into a seamless network. Unlike microtransit, which focuses solely on small-vehicle on-demand service, multimodal solutions provide riders with comprehensive journey planning that combines the best of fixed route reliability with on-demand flexibility. This approach maximizes coverage, minimizes costs, and provides riders with more options to get where they need to go.
                 </p>
                 
                 <div style="text-align: center; margin-top: 2rem;">
@@ -473,8 +588,16 @@
             </div>
 
             <div class="story-box">
-                <h2>Our Story: Born from Research</h2>
-                <p>Modal was born from cutting-edge research at Georgia Tech and the University of Michigan, backed by the NSF AI Institute for Advances in Optimization (AI4OPT). Our team of researchers spent years developing the algorithms and optimization techniques that power modern on-demand transit. We're not just building software—we're bringing decades of academic research and real-world pilot deployments into a production-ready platform that agencies can trust.</p>
+                <h2>Our Story: 8 Years of Research with Transit Agencies</h2>
+                <div style="display: flex; gap: 20px;">
+                    <div style="flex: 0 0 70%;">
+                        <p>Modal was born from <a href="#" onclick="showPage('research')">8 years of cutting-edge research</a> at Georgia Tech and the University of Michigan to solve a single problem: how to make on-demand transit affordable for transit agencies. Together with agency experts, our team of researchers developed the algorithms and optimization techniques that power modern on-demand transit.</p><br>
+                        <p>This wasn't just conceptual - <a href="#" onclick="showPage('research')">across $5M in pilots</a>, we worked side-by-side with transit professionals to learn, improve, and test our technology in real communities. The strong success of these partnerships inspired us to found Modal, so we can bring affordable on-demand to every city.</p>
+                    </div>
+                    <div style="flex: 0 0 30%;">
+                        <img src="Static/modal_placeholder.png" alt="Modal Founders" style="display: block; width: 100%; height: auto; border-radius: 12px;">
+                    </div>
+                </div>
             </div>
 
             <h2 style="text-align: center; font-size: 2rem; margin: 4rem 0 3rem;">Our Values</h2>
@@ -545,8 +668,8 @@
     <!-- Contact Page -->
     <div id="contact" class="page-content">
         <div class="contact-container">
-            <h1 style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">Let's Talk</h1>
-            <p style="text-align: center; font-size: 1.25rem; color: var(--gray); margin-bottom: 3rem;">Ready to learn more about Modal?  Get in touch with our team.</p>
+            <h1 style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">Talk with Us</h1>
+            <p style="text-align: center; font-size: 1.25rem; color: var(--gray); margin-bottom: 3rem;">Want to learn more about Modal?  Get in touch with our team.</p>
 
             <div class="contact-form">
                 <form onsubmit="handleSubmit(event)">
@@ -600,10 +723,10 @@
             <h1>Privacy Policy</h1>
             <p style="margin-bottom: 2rem;"><em>Last Updated: October 27, 2025</em></p>
 
-            <h2>1. Information We Collect</h2>
+            <p>1. Information We Collect</p>
             <p>Modal Mobility Corp ("Modal," "we," "us," or "our") collects information that you provide directly to us, including when you create an account, use our services, or communicate with us. This may include your name, email address, phone number, payment information, and location data.</p>
 
-            <h2>2. How We Use Your Information</h2>
+            <p>2. How We Use Your Information</p>
             <p>We use the information we collect to:</p>
             <ul>
                 <li>Provide, maintain, and improve our services</li>
@@ -613,31 +736,37 @@
                 <li>Analyze usage patterns and trends</li>
             </ul>
 
-            <h2>3. Information Sharing</h2>
-            <p>We do not sell your personal information. We may share your information with:</p>
+            <p>3. Information Sharing</p>
+            <p>We do not sell your personal information. If you are a rider, we may share your information with:</p>
             <ul>
                 <li>Transit agencies you use our services with</li>
                 <li>Service providers who assist in our operations</li>
                 <li>Law enforcement when required by law</li>
                 <li>Other parties with your consent</li>
             </ul>
+            <p>If you are a transit provider, we may share your information with:</p>
+            <ul>
+                <li>Service providers who assist in our operations</li>
+                <li>Law enforcement when required by law</li>
+                <li>Other parties with your consent</li>
+            </ul>
 
-            <h2>4. Data Security</h2>
+            <p>4. Data Security</p>
             <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
 
-            <h2>5. Your Rights</h2>
+            <p>5. Your Rights</p>
             <p>You have the right to access, correct, or delete your personal information. You may also object to or restrict certain processing of your data. To exercise these rights, please contact us at privacy@ridemodal.com.</p>
 
-            <h2>6. Cookies and Tracking</h2>
+            <p>6. Cookies and Tracking</p>
             <p>We use cookies and similar tracking technologies to collect information about your browsing activities and to provide personalized content and advertising.</p>
 
-            <h2>7. Children's Privacy</h2>
+            <p>7. Children's Privacy</p>
             <p>Our services are not directed to unaccompanied minors under 13, and we do not knowingly collect personal information from unaccompanied minors under 13.</p>
 
-            <h2>8. Changes to This Policy</h2>
+            <p>8. Changes to This Policy</p>
             <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date.</p>
 
-            <h2>9. Contact Us</h2>
+            <p>9. Contact Us</p>
             <p>If you have questions about this privacy policy, please contact us at:</p>
             <p>Modal Mobility Corp<br>
             Email: legal@ridemodal.com<br>
@@ -652,16 +781,16 @@
             <h1>Terms of Service</h1>
             <p style="margin-bottom: 2rem;"><em>Last Updated: October 27, 2025</em></p>
 
-            <h2>1. Acceptance of Terms</h2>
+            <p>1. Acceptance of Terms</p>
             <p>By accessing or using Modal's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using our services.</p>
 
-            <h2>2. Description of Service</h2>
+            <p>2. Description of Service</p>
             <p>Modal provides a mobility platform for transit agencies, including routing optimization, dispatch management, rider applications, and related services. We reserve the right to modify or discontinue any aspect of our services at any time.</p>
 
-            <h2>3. User Accounts</h2>
+            <p>3. User Accounts</p>
             <p>You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must notify us immediately of any unauthorized use of your account.</p>
 
-            <h2>4. Acceptable Use</h2>
+            <p>4. Acceptable Use</p>
             <p>You agree not to:</p>
             <ul>
                 <li>Use our services for any illegal purpose</li>
@@ -671,28 +800,28 @@
                 <li>Violate any applicable laws or regulations</li>
             </ul>
 
-            <h2>5. Intellectual Property</h2>
+            <p>5. Intellectual Property</p>
             <p>All content, features, and functionality of our services are owned by Modal Mobility Corp and are protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written permission.</p>
 
-            <h2>6. Payment Terms</h2>
+            <p>6. Payment Terms</p>
             <p>If you purchase services from Modal, you agree to pay all fees according to the pricing and payment terms presented to you. All fees are non-refundable unless otherwise stated.</p>
 
-            <h2>7. Limitation of Liability</h2>
+            <p>7. Limitation of Liability</p>
             <p>To the maximum extent permitted by law, Modal shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.</p>
 
-            <h2>8. Indemnification</h2>
+            <p>8. Indemnification</p>
             <p>You agree to indemnify and hold harmless Modal and its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses arising out of your use of our services or violation of these terms.</p>
 
-            <h2>9. Termination</h2>
+            <p>9. Termination</p>
             <p>We reserve the right to terminate or suspend your account and access to our services at our sole discretion, without notice, for conduct that we believe violates these Terms of Service or is harmful to other users, us, or third parties, or for any other reason.</p>
 
-            <h2>10. Governing Law</h2>
+            <p>10. Governing Law</p>
             <p>These Terms of Service shall be governed by and construed in accordance with the laws of the State of Georgia, without regard to its conflict of law provisions.</p>
 
-            <h2>11. Changes to Terms</h2>
+            <p>11. Changes to Terms</p>
             <p>We reserve the right to modify these terms at any time. We will notify users of any material changes by posting the new Terms of Service on this page and updating the "Last Updated" date.</p>
 
-            <h2>12. Contact Information</h2>
+            <p>12. Contact Information</p>
             <p>For questions about these Terms of Service, please contact us at:</p>
             <p>Modal Mobility Corp<br>
             Email: legal@ridemodal.com<br>
@@ -712,100 +841,11 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <a href="#" onclick="showPage('home')">
-                        <img src="modal_logo.png" alt="Modal" class="footer-logo">
-                    </a>
-                    <p style="color: var(--light-gray); font-size: 0.9rem; line-height: 1.6;">
-                        Next-generation multimodal transportation for agencies and transportation providers.
-                    </p>
-                </div>
+    <div id="main-footer-placeholder"></div>
 
-                <div class="footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#" onclick="showPage('product')">Features</a></li>
-                        <li><a href="#" onclick="showPage('case-studies')">Case Studies</a></li>
-                        <li><a href="#" onclick="showPage('why-modal')">Why Modal</a></li>
-                        <li><a href="#" onclick="showPage('pricing')">Pricing</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#" onclick="showPage('company')">About Us</a></li>
-                        <li><a href="#" onclick="showPage('careers')">Careers</a></li>
-                        <li><a href="https://modalmobility.sharepoint.com/:f:/s/Modal-Press/EkJ1gHcMDORDiTPJBn-EQ1UBPYrHdQjOz-jc2Z_ICeB7xg?e=Eclbbv">Press Kit</a></li>
-                        <li><a href="#" onclick="showPage('contact')">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Research</h4>
-                    <ul>
-                        <li><a href="#" onclick="showPage('research')">Research</a></li>
-                        <li><a href="#" onclick="showPage('papers')">Papers</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="https://www.x.com/ridemodal">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/ridemodal">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=61582096768866">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12H17l-.4 3h-2.6v7A10 10 0 0022 12z"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.youtube.com/@ridemodal">
-                            <svg width="23" height="23" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M21.8 8.001a2.5 2.5 0 0 0-1.8-1.77C18 5.75 12 5.75 12 5.75s-6 0-8 .48a2.5 2.5 0 0 0-1.8 1.77A26.9 26.9 0 0 0 2 12a26.9 26.9 0 0 0 .4 3.999 2.5 2.5 0 0 0 1.8 1.77c2 .48 8 .48 8 .48s6 0 8-.48a2.5 2.5 0 0 0 1.8-1.77A26.9 26.9 0 0 0 22 12a26.9 26.9 0 0 0-.2-3.999zM10 14.65v-5.3L15.2 12 10 14.65z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/company/ridemodal">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.7v1.6h.1a4 4 0 0 1 3.6-2c3.8 0 4.6 2.5 4.6 5.8V21h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/>
-                            </svg>
-                        </a>
-                        <a href="mailto:hello@ridemodal.com">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6" fill="none" stroke="var(--dark)" stroke-width="2"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <p style="color: var(--light-gray); font-size: 0.9rem;">hello@ridemodal.com</p>
-                    <p style="color: var(--light-gray); font-size: 0.9rem;">+1 (404) 981-2354</p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p style="color: var(--light-gray); font-size: 0.9rem;">© 2025 Modal Mobility Corp. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#" onclick="showPage('privacy')" style="color: var(--light-gray); font-size: 0.9rem;">Privacy Policy</a>
-                    <a href="#" onclick="showPage('tos')" style="color: var(--light-gray); font-size: 0.9rem;">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    <script src="scripts.js"></script>
     <script>
+
         function showPage(pageId) {
             // Hide all pages
             const pages = document.querySelectorAll('.page-content');

@@ -82,13 +82,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin: 2rem auto;
     max-width: 1000px;
+    text-align: center;
 }
 
 .comparison-box {
-    background: white;
-    border: 2px solid var(--accent);
     padding: 2rem;
     text-align: center;
 }
@@ -99,12 +97,6 @@
     border-image: linear-gradient(135deg, var(--primary), var(--accent)) 1;
     padding: 2rem;
     text-align: center;
-}
-
-.comparison-box h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--dark);
 }
 
 .comparison-image {

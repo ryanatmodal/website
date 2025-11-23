@@ -47,6 +47,13 @@ footer {
     margin-bottom: 1rem;
 }
 
+.georgia-logo {
+    margin-top: 1em;
+    height: 40px;
+    fill: var(--light-gray);
+    display: block;
+}
+
 .social-links {
     display: flex;
     gap: 0.5rem;

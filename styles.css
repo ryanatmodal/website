@@ -5,11 +5,17 @@
     --primary: #E9AF58;
     --primary-hover: #D89F48;
     --accent: #93C9E8;
+    --strong-accent: #52aee3;
     --dark: #2F4651;
     --gray: #666;
+    --light-bg: #F8FAFB;
     --light-gray: rgba(255,255,255,0.7);
     --green: #0b7a25;
+    --red: #E74C3C;
     --max-width: 1600px;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
 }
 
 body {
@@ -17,6 +23,10 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     line-height: 1.4;
     color: var(--dark);
+}
+
+.no-underline {
+    text-decoration: none;
 }
 
 a {
