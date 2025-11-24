@@ -10,6 +10,13 @@
     padding-top: 80px;
 }
 
+.gradient-text {
+    background: linear-gradient(135deg, var(--strong-accent), var(--dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 /* Subtle accent shapes */
 .hero::before {
     content: '';
@@ -93,7 +100,7 @@ p {
     font-size: 1.3rem;
     color: var(--gray);
     margin-bottom: 0.5rem;
-    max-width: 900px;
+    max-width: 910px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
@@ -178,7 +185,7 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     line-height: 1;
-    margin-top: 2rem;
+    margin: 3rem 0rem;
 }
 
 .btn-primary {
@@ -228,7 +235,6 @@ p {
     gap: 2rem;
     max-width: 1100px;
     margin-left: auto;
-    margin-bottom: 4rem;
     margin-right: auto;
 }
 
@@ -269,7 +275,6 @@ p {
     color: var(--gray);
     font-size: 1.05rem;
     line-height: 1.4;
-    margin-bottom: 0.5rem;
 }
 
 .stat-link {
@@ -281,6 +286,7 @@ p {
     align-items: center;
     gap: 0.3rem;
     transition: all 0.2s ease;
+    margin-bottom: 0rem;
 }
 
 .stat-link:hover {
@@ -295,7 +301,7 @@ p {
     flex-direction: column;
     padding: 3rem;
     border-radius: var(--border-radius-lg);
-    margin: 4rem 8rem;
+    margin: 3rem 8rem;
     max-width: var(--max-width);
     box-shadow: var(--shadow-md);
     border-left: 6px solid var(--primary);
@@ -324,4 +330,36 @@ p {
 
 .story-box a:hover {
     border-bottom-color: var(--primary);
+}
+
+.plain-wide {
+    margin: 3rem 8rem;
+}
+
+.plain-wide h2 {
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.plain-wide ul {
+    font-size: 1.3rem;
+    color: var(--gray);
+    margin-bottom: 0.5rem;
+    max-width: 910px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    line-height: 1.6;
+}
+
+.plain-wide ol {
+    font-size: 1.3rem;
+    color: var(--gray);
+    margin-bottom: 0.5rem;
+    max-width: 910px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    line-height: 1.6;
 }

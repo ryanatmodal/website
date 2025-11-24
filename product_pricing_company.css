@@ -119,14 +119,13 @@
 
 /* Company Pages */
 .company-container {
-    padding: 8rem 8rem 4rem;
+    padding: 8rem 0rem;
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
 .mission-section {
     text-align: center;
-    margin-bottom: 6rem;
 }
 
 .mission-section h1 {
