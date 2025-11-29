@@ -1,6 +1,5 @@
 /* Hero */
 .hero {
-    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +16,7 @@
     background-clip: text;
 }
 
-/* Subtle accent shapes */
+Subtle accent shapes
 .hero::before {
     content: '';
     position: absolute;
@@ -296,15 +295,14 @@ p {
 
 /* Story Box */
 .story-box {
-    display: flex;
     background: white;
-    flex-direction: column;
     padding: 3rem;
     border-radius: var(--border-radius-lg);
     margin: 3rem 8rem;
     max-width: var(--max-width);
     box-shadow: var(--shadow-md);
     border-left: 6px solid var(--primary);
+    justify-self: center;
 }
 
 .story-box h2 {
