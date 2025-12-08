@@ -35,10 +35,22 @@
     text-align: center;
 }
 
-.feature-card:hover {
+.hover-accent:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
     border-color: var(--accent);
+}
+
+.hover-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.hover-outline:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--subtle-gray);
+    transition: all 0.3s ease;
 }
 
 /* SVG icon container */

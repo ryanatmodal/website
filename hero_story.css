@@ -279,12 +279,6 @@ p {
     border: 2px solid transparent;
 }
 
-.stat:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary);
-}
-
 .stat-logo {
     height: 40px;
     width: auto;
