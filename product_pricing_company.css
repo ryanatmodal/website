@@ -150,7 +150,7 @@
 .values-grid {
     display: grid;
     margin: 2rem 0;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
 }
 
@@ -159,12 +159,33 @@
     padding: 2rem;
     border-radius: 16px;
     border: 1px solid var(--light-gray);
+    min-height: 200px;
+}
+
+.vc-green {
+    background: linear-gradient(135deg, rgba(147, 232, 156, 0.3) 0%, transparent 100%);
+}
+
+.vc-purple {
+    background: linear-gradient(135deg, rgba(201, 147, 232, 0.3) 0%, transparent 100%);
+}
+
+.vc-gold {
+    background: linear-gradient(135deg, rgba(232, 211, 147, 0.3) 0%, transparent 100%);
 }
 
 .value-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--dark);
+}
+
+.value-card ol {
+    margin-left: 0 !important;
+}
+
+.vc-a {
+    text-decoration: none;
 }
 
 .floating-pop {

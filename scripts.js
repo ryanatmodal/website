@@ -32,7 +32,7 @@ async function handleSubmit(event) {
     }).catch(console.error);
 
     const message = document.createElement("p");
-    message.textContent = "\nThank you! We'll be in touch shortly.";
+    message.textContent = "\nThank you! We'll get back to you within 24 hours.";
     form.appendChild(message);
     form.reset();
 }

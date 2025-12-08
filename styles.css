@@ -17,6 +17,7 @@
     --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
     --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
     --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+    scroll-margin-top: 80px;
 }
 
 body {
@@ -33,8 +34,16 @@ body {
     border-radius: 12px;
 }
 
-.no-underline {
+.no-ul {
     text-decoration: none;
+}
+
+.mouse-ul {
+    text-decoration: none;
+}
+
+.mouse-ul:hover {
+    text-decoration: underline;
 }
 
 a {
