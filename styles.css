@@ -7,6 +7,7 @@
     --accent: #93C9E8;
     --strong-accent: #52aee3;
     --dark: #2F4651;
+    --light-dark: #2f4651a4;
     --gray: #666;
     --light-bg: #F8FAFB;
     --light-gray: rgba(255,255,255,0.7);
@@ -23,6 +24,13 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     line-height: 1.4;
     color: var(--dark);
+}
+
+.picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
 }
 
 .no-underline {
@@ -79,12 +87,11 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--accent);
+    color: var(--light-dark);
 }
 
 .nav-links .cta-button {
     background: var(--primary);
-    color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
     transition: all 0.3s;
@@ -92,7 +99,7 @@ nav {
 
 .nav-links .cta-button:hover {
     background: var(--primary-hover);
-    color: white;
+    color: var(--dark);
 }
 
 .dropdown {
@@ -145,6 +152,10 @@ nav {
     padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.contact-form p {
+    font-size: 1rem;
 }
 
 .form-group {
@@ -205,6 +216,17 @@ nav {
 
 .page-content.active {
     display: block;
+}
+
+/* Image Background */
+.image-background {
+    padding: 2rem 0rem;
+    background-size: cover;
+    background-position: center;
+}
+.marta {
+    background-image: url('Static/marta_reach_vehicles.jpg');
+    z-index: 1;
 }
 
 @media (max-width: 768px) {

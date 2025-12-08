@@ -1,9 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1235" height="650" viewBox="0 0 7410 3900">
-<path d="M0,0h7410v3900H0" fill="rgba(255,255,255,0.7)"/>
-<path d="M0,450H7410m0,600H0m0,600H7410m0,600H0m0,600H7410m0,600H0" stroke="#2F4651" stroke-width="300"/>
-<rect width="2963" height="2100" fill="#2F4651" />
-<path d="M0,0h2964v2100H0" fill="rgba(255,255,255,0.7)"/>
-<g fill="#2F4651">
+<path d="M7410,2250H0m0,600H7410m0,600H0" stroke="rgba(255,255,255,0.7)" stroke-width="300"/>
+<path d="M2963,450H7410m0,600H2963m0,600H7410m0" stroke="rgba(255,255,255,0.7)" stroke-width="300"/>
+<g fill="rgba(255,255,255,0.7)">
 <g id="s18">
 <g id="s9">
 <g id="s5">

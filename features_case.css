@@ -19,7 +19,7 @@
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
@@ -101,13 +101,17 @@
 
 .case-study-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 0.5rem;
     margin: 2rem 0;
     padding: 1.5rem;
     background: var(--light-bg);
     border-radius: 12px;
     border: 2px solid #E8EDF2;
+}
+
+.dark-border {
+    border: 2px solid var(--dark);
 }
 
 .case-stat {

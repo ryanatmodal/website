@@ -117,6 +117,13 @@
     margin-top: 1rem;
 }
 
+.img-caption {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    justify-self: center;
+}
+
 /* Company Pages */
 .company-container {
     padding: 8rem 0rem;
@@ -142,24 +149,30 @@
 
 .values-grid {
     display: grid;
+    margin: 2rem 0;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-top: 4rem;
 }
 
 .value-card {
     background: linear-gradient(135deg, rgba(147, 201, 232, 0.3) 0%, transparent 100%);
     padding: 2rem;
     border-radius: 16px;
-    border: 1px solid rgba(147, 201, 232, 0.2);
-    margin: 0 auto 4rem;
-    padding: 3rem;
+    border: 1px solid var(--light-gray);
 }
 
 .value-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--dark);
+}
+
+.floating-pop {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    margin-top: 3rem;
 }
 
 /* Pricing */

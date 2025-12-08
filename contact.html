@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modal offers on-demand transit software that leverages multimodal (not microtransit) and research-based optimization to achieve a 3-5x lower cost per rider than microtransit.">
+    <title>Modal: On-Demand Multimodal Transit Software</title>
+    <link rel="icon" type="image/png" href="Static/modal_favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product_pricing_company.css">
+    <link rel="stylesheet" href="legal.css">
+    <link rel="stylesheet" href="hero_story.css">
+    <link rel="stylesheet" href="features_case.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-header-placeholder"></div>
+    <div id="contact" class="page-content active">
+        <div class="contact-container">
+            <h1 style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">Talk with Us</h1>
+            <p style="text-align: center; font-size: 1.25rem; color: var(--gray); margin-bottom: 3rem;">Want to learn more about Modal?  Get in touch with our team.</p>
+
+            <div class="contact-form">
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">First Name *</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Last Name *</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Phone Number *</label>
+                        <input type="phone" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="org">Organization *</label>
+                        <input type="text" id="org" name="org" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Your Role</label>
+                        <select id="role" name="role">
+                            <option value="">Select your organization type</option>
+                            <option value="agency">Public Transit Operator/Agency</option>
+                            <option value="city">City or Municipality</option>
+                            <option value="university">University</option>
+                            <option value="healthcare">Healthcare System</option>
+                            <option value="corporation">Corporation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="main-footer-placeholder"></div>
+    <script src="scripts.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("service_0iv6k4k");
+    })();
+    </script>
+</body>
+</html>

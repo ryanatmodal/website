@@ -17,6 +17,14 @@ footer {
     margin-bottom: 3rem;
 }
 
+.footer-column {
+    width: 110px;
+}
+
+.fc-wide {
+    min-width: 200px;
+}
+
 .footer-column h4 {
     margin-bottom: 1rem;
     font-size: 1.1rem;
@@ -44,14 +52,19 @@ footer {
 .footer-logo {
     height: 40px;
     filter: brightness(0) invert(1);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.georgia-logo {
+.logo-grid {
     margin-top: 1em;
-    height: 40px;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-affiliation-logo {
+    height: 35px;
+    max-width: 100px;
     fill: var(--light-gray);
-    display: block;
 }
 
 .social-links {

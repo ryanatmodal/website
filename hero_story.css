@@ -9,8 +9,19 @@
     padding-top: 80px;
 }
 
+.hero p {
+    font-size: 1.3rem;
+}
+
 .gradient-text {
     background: linear-gradient(135deg, var(--strong-accent), var(--dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-text-2 {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -50,6 +61,24 @@ Subtle accent shapes
     text-align: center;
     position: relative;
     z-index: 1;
+}
+
+.modal-changes {
+    font-size: 2.7rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-changes img {
+    max-height: 2.5rem;
+}
+
+.modal-changes h2 {
+    font-size: 2.5rem;
+    line-height: 1.9rem;
+    margin-bottom: 0;
 }
 
 h1 {
@@ -96,7 +125,7 @@ h3 {
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--gray);
     margin-bottom: 0.5rem;
     max-width: 910px;
@@ -107,7 +136,7 @@ p {
 
 /* Comparison Grid - with adjustable image sizing */
 .comparison-grid {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin: 2rem auto;
@@ -137,16 +166,14 @@ p {
     color: var(--dark);
 }
 
-/* Adjustable image container */
 .comparison-box img {
     display: block;
     width: 100%;
-    max-width: 350px; /* Adjust this value to resize images */
+    max-width: 350px;
     height: auto;
     margin: 0 auto 1.5rem;
 }
 
-/* SVG Icons for checkmarks and X marks */
 .comparison-caption {
     font-size: 1.1rem;
     line-height: 1.25;
@@ -189,7 +216,7 @@ p {
 
 .btn-primary {
     background: var(--primary);
-    color: white;
+    color: var(--dark);
     padding: 1rem 2rem;
     border-radius: 12px;
     text-decoration: none;
@@ -233,8 +260,9 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    justify-self: center;
 }
 
 .stat {
@@ -265,6 +293,7 @@ p {
 }
 
 .stat-number {
+    color: var(--dark);
     font-size: 2.75rem;
     font-weight: 800;
     line-height: 1;
@@ -314,11 +343,10 @@ p {
 
 .story-box p {
     color: var(--gray);
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-size: 1.2rem;
 }
 
-.story-box a {
+.olink {
     color: var(--primary);
     text-decoration: none;
     font-weight: 600;
@@ -326,7 +354,11 @@ p {
     transition: border-color 0.2s ease;
 }
 
-.story-box a:hover {
+.olink:visited {
+    color: var(--primary);
+}
+
+.olink:hover {
     border-bottom-color: var(--primary);
 }
 
@@ -341,7 +373,7 @@ p {
 }
 
 .plain-wide ul {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--gray);
     margin-bottom: 0.5rem;
     max-width: 910px;
@@ -352,7 +384,7 @@ p {
 }
 
 .plain-wide ol {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--gray);
     margin-bottom: 0.5rem;
     max-width: 910px;

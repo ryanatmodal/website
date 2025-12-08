@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal - Transform Your Transit Operations</title>
-    <link rel="icon" type="image/png" href="Static/modal_favicon.svg">
+    <meta name="description" content="Modal offers on-demand transit software that leverages multimodal (not microtransit) and research-based optimization to achieve a 3-5x lower cost per rider than microtransit.">
+    <title>Modal: On-Demand Multimodal Transit Software</title>
+    <link rel="icon" type="image/svg+xml" href="/Static/modal_favicon.svg">
+    <link rel="icon" type="image/png" sizes="48x48" href="/Static/modal_favicon_48_48.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="product_pricing_company.css">
     <link rel="stylesheet" href="legal.css">
@@ -64,7 +67,10 @@
                     </div>
                 </div>
                 
-                <h2>Modal changes that:</h2>
+                <div class="modal-changes">
+                    <img src="modal_logo.png" alt="Modal">
+                    <h2>changes that:</h2>
+                </div>
                 
                 <div class="comparison-grid">
                     <div class="comparison-box">
@@ -87,15 +93,15 @@
                     </div>
                 </div>
                 
-                <p style="margin-top: 2rem;">Multimodal uses shuttles only for the first and last mile, connecting riders to high-capacity, cost-efficient buses for the majority of their trip.</p>
-                <p style="margin-top: 2rem;"><b>Multimodal isn't new, but our optimization is.</b></p>
+                <p style="margin-top: 1rem;">Multimodal uses on-demand shuttles only for the first and last mile, connecting riders to high-capacity, cost-efficient buses for the majority of their trip.</p>
+                <p style="margin-top: 1.5rem;"><b>Multimodal isn't new, but our optimization is.</b></p>
 
             <div class="button-group" style="margin-top: 2em; margin-bottom: 0em;">
-                <a href="#" onclick="showPage('contact')" class="btn-primary">
+                <a href="contact.html" class="btn-primary">
                     Request a Demo
                     <span>→</span>
                 </a>
-                <a href="#" onclick="showPage('case-studies')" class="btn-secondary">
+                <a href="case-studies.html" class="btn-secondary">
                     See the Numbers
                     <span>→</span>
                 </a>
@@ -105,32 +111,19 @@
 
         </section>
 
-        <div class="story-box">
-            <h2>Our Story: 8 Years of Research with Transit Agencies</h2>
-            <div style="display: flex;">
-                <div style="flex: 0 0 70%;">
-                    <p>Modal was born from <a href="#" onclick="showPage('research')">8 years of cutting-edge research</a> at Georgia Tech and the University of Michigan to solve a single problem: how to make on-demand transit affordable for transit agencies. Together with agency experts, our researchers developed the algorithms and optimization techniques that power modern on-demand transit.</p><br>
-                    <p>This wasn't just conceptual - <a href="#" onclick="showPage('research')">across $5M in pilots</a>, we worked side-by-side with transit professionals to learn, improve, and test our technology in real communities. These partnerships inspired us to found Modal, to bring affordable on-demand to every city.</p>
-                </div>
-                <div style="flex: 0 0 3%;"></div>
-                <div style="flex: 0 0 27%;">
-                    <img src="Static/cat_smart_team.png" alt="Team" style="display: block; width: 100%; height: auto; border-radius: 12px;">
-                </div>
-            </div>
-        </div>
+        <div id="story-box-placeholder"></div>
 
         <div style="justify-content: center;">
-            <h2 class="section-title">Case Studies</h2>
             <div class="stats">
-                <a href="#" onclick="showPage('case-studies')" class="no-underline">
+                <a href="case-studies.html" class="no-underline">
                     <div class="stat">
                         <img src="Static/marta_logo.png" alt="MARTA" class="stat-logo" onerror="this.style.display='none'">
                         <div class="stat-number">66%</div>
-                        <div class="stat-label">average ridership growth each month</div>
+                        <div class="stat-label">average ridership growth <i>each month</i></div>
                         <p class="stat-link">See how MARTA did it →</p>
                     </div>
                 </a>
-                <a href="#" onclick="showPage('case-studies')" class="no-underline">
+                <a href="case-studies.html" class="no-underline">
                     <div class="stat">
                         <img src="Static/um_logo.png" alt="University of Michigan" class="stat-logo" onerror="this.style.display='none'">
                         <div class="stat-number">3 min</div>
@@ -138,17 +131,17 @@
                         <p class="stat-link">See how Michigan did it →</p>
                     </div>
                 </a>
-                <a href="#" onclick="showPage('case-studies')" class="no-underline">
+                <a href="case-studies.html" class="no-underline">
                     <div class="stat">
                         <img src="Static/cat_logo.png" alt="CAT" class="stat-logo" onerror="this.style.display='none'">
-                        <div class="stat-number">XYZ</div>
-                        <div class="stat-label">Savannah stat</div>
+                        <div class="stat-number">49%</div>
+                        <div class="stat-label">reduction in travel time</div>
                         <p class="stat-link">See how CAT did it →</p>
                     </div>
                 </a>
             </div>
             <div class="button-group">
-                <a href="#" onclick="showPage('case-studies')" class="btn-secondary">
+                <a href="case-studies.html" class="btn-secondary">
                     View Case Studies
                     <span>→</span>
                 </a>
@@ -192,7 +185,7 @@
                                 <path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z"/>
                             </svg>
                         </div>
-                        <h3>Reduce Fixed Route Cannibalization</h3>
+                        <h3>Reduce Service Cannibalization</h3>
                         <p>Riders use fixed routes when possible</p>
                     </div>
                 </div>
@@ -235,7 +228,7 @@
                     </div>
                 </div>
                 <div class="features-cta">
-                    <a href="#" onclick="showPage('research')" class="btn-secondary">
+                    <a href="research.html" class="btn-secondary">
                         See the Research<span>→</span>
                     </a>
                 </div>
@@ -243,687 +236,7 @@
         </section>
     </div>
 
-    <!-- Product Page -->
-    <div id="product" class="page-content">
-        <section class="product-hero">
-            <h1>Powerful Features for <span class="gradient-text">Modern Transit</span></h1>
-            <p>Everything you need to run efficient, rider-friendly on-demand transit operations at scale.</p>
-        </section>
-
-        <section class="product-features">
-            <div class="feature-detail">
-                <div>
-                    <h2>Intelligent Routing Engine</h2>
-                    <p>Our AI-powered routing system optimizes every trip in real-time, reducing costs while improving service quality.</p>
-                    <ul>
-                        <li>Dynamic route optimization</li>
-                        <li>Multi-modal integration</li>
-                        <li>Real-time traffic adaptation</li>
-                        <li>Predictive demand modeling</li>
-                    </ul>
-                </div>
-                <div class="feature-image">🗺️</div>
-            </div>
-
-            <div class="feature-detail">
-                <div>
-                    <h2>Dispatch & Fleet Management</h2>
-                    <p>Manage your entire fleet from a single dashboard with real-time visibility and control.</p>
-                    <ul>
-                        <li>Live vehicle tracking</li>
-                        <li>Driver communication</li>
-                        <li>Automated scheduling</li>
-                        <li>Performance analytics</li>
-                    </ul>
-                </div>
-                <div class="feature-image">🚐</div>
-            </div>
-
-            <div class="feature-detail">
-                <div>
-                    <h2>Rider Experience</h2>
-                    <p>Delightful mobile apps that make booking, tracking, and paying for rides effortless.</p>
-                    <ul>
-                        <li>One-tap booking</li>
-                        <li>Real-time tracking</li>
-                        <li>Flexible payment options</li>
-                        <li>Trip history & receipts</li>
-                    </ul>
-                </div>
-                <div class="feature-image">📲</div>
-            </div>
-
-            <div class="feature-detail">
-                <div>
-                    <h2>Analytics & Insights</h2>
-                    <p>Make data-driven decisions with comprehensive analytics and reporting tools.</p>
-                    <ul>
-                        <li>Real-time dashboards</li>
-                        <li>Custom reports</li>
-                        <li>Performance metrics</li>
-                        <li>Predictive analytics</li>
-                    </ul>
-                </div>
-                <div class="feature-image">📈</div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Case Studies Page -->
-    <div id="case-studies" class="page-content">
-        <div class="company-container">
-            <div class="mission-section">
-                <h1>Case Studies</h1>
-                <p>See how transit agencies are transforming their operations with Modal</p>
-            </div>
-
-            <div class="case-study">
-                <h2>Atlanta, GA - MARTA</h2>
-                <div class="case-study-stats">
-                    <div class="case-stat">
-                        <div class="case-stat-number">66%</div>
-                        <div class="case-stat-label">Average month over month ridership increase</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">10x</div>
-                        <div class="case-stat-label">MARTA increased their on-demand pilot budget after working with us</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">7min</div>
-                        <div class="case-stat-label">Average wait time (Uber is 15)</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">35%→71%</div>
-                        <div class="case-stat-label">Riders "very satisfied" with service</div>
-                    </div>
-                </div>
-                <p style="color: var(--gray); line-height: 1.8;">MARTA partnered with Modal to launch an innovative on-demand transit pilot serving key corridors in metro Atlanta. Our platform's superior routing algorithms and seamless rider experience helped MARTA achieve remarkable results, leading to a 10x budget increase for expansion. The service now provides fast, reliable transit connections with wait times significantly better than traditional ride-sharing options.</p>
-            </div>
-
-            <div class="case-study">
-                <h2>Ann Arbor, MI – University of Michigan</h2>
-                <div class="case-study-stats">
-                    <div class="case-stat">
-                        <div class="case-stat-number">400+</div>
-                        <div class="case-stat-label">Daily ridership</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                </div>
-                <p style="color: var(--gray); line-height: 1.8;">The University of Michigan deployed Modal's platform to provide flexible, on-demand transportation for students, faculty, and staff across campus and surrounding areas. The service quickly gained adoption with over 400 daily riders, demonstrating the strong demand for intelligent, responsive transit solutions in university environments.</p>
-            </div>
-
-            <div class="case-study">
-                <h2>Savannah, GA – Chatham Area Transit</h2>
-                <div class="case-study-stats">
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                </div>
-                <p style="color: var(--gray); line-height: 1.8;">Chatham Area Transit (CAT) worked with Modal to enhance their service offerings with on-demand transit solutions. Our platform enabled CAT to provide more flexible, responsive service to the Savannah community while maintaining operational efficiency.</p>
-            </div>
-
-            <div class="case-study">
-                <h2>Wilson, NC – City of Wilson</h2>
-                <div class="case-study-stats">
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                    <div class="case-stat">
-                        <div class="case-stat-number">[Stat]</div>
-                        <div class="case-stat-label">[Description]</div>
-                    </div>
-                </div>
-                <p style="color: var(--gray); line-height: 1.8;">The City of Wilson switched from Via to Modal for their on-demand transit service. Our all-in-one platform approach, which provides consistent software and user experience across all components, was a key factor in their decision to make the switch.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Research Page -->
-    <div id="research" class="page-content">
-        <div class="company-container">
-            <div class="mission-section">
-                <h1>Research-Driven Innovation</h1>
-            </div>
-
-            <div class="case-study-stats" style="max-width: 910px; justify-self: center;">
-                <div class="case-stat">
-                    <div class="case-stat-number gradient-text">60%</div>
-                    <div class="case-stat-label">Of our team have PhDs</div>
-                </div>
-                <div class="case-stat">
-                    <div class="case-stat-number gradient-text">55+</div>
-                    <div class="case-stat-label">Published papers</div>
-                </div>
-                <div class="case-stat">
-                    <div class="case-stat-number gradient-text">$5M</div>
-                    <div class="case-stat-label">In research deployments</div>
-                </div>
-                <div class="case-stat">
-                    <div class="case-stat-number gradient-text">8 years</div>
-                    <div class="case-stat-label">Of R&D</div>
-                </div>
-            </div>
-
-            <div class="plain-wide">
-                <h2>Why Research</h2>
-                <p>Transit agencies have been promised affordable on-demand solutions for a decade.  Multimodal <i>can</i> offer a lower cost per rider compared to microtransit, but <b>without the right optimization, multimodal doesn't work</b>.</p>
-                <p>Multimodal optimization is fundamentally more complex than microtransit.  You need to:</p>
-                <ul>
-                    <li>...optimize not just for shuttles, but also fixed route like bus and rail</li>
-                    <li>...model and optimize transfer timing, walking links, and connection reliability</li>
-                    <li>...have dynamic rerouting that adapts to fixed route delays, traffic, and new ride requests</li>
-                    <li>...avoid, but account for, missed transfers and cascading delays</li>
-                    <li>...do all this at city scale, in real time, in a fraction of a second</li>
-                </ul>
-                <p><b>The optimization behind multimodal is what actually unlocks 3-5x lower cost per rider.</b></p>
-            </div>
-
-            <div class="plain-wide">
-                <h2>Why Modal is Different</h2>
-                <p>Hard problems take time - while competitors were still focused on microtransit, <b>we've spent the last eight years building the optimization</b> required for true multimodal operations.</p>
-                <p>Competitors now offer basic multimodal features (request a ride, route to a stop), but this doesn't generate meaningful cost savings. Without deep optimization, multimodal behaves like microtransit with extra steps: high operating cost, low reliability, and inconsistent transfers.</p>
-                <p>If you're considering a multimodal solution, <b>here's what you should ask vendors (and us)</b>:</p>
-                <ol>
-                    <li>What evidence do you have that your multimodal leads to 3-5x lower cost per rider?</li>
-                    <li>What recent peer-reviewed research supports your multimodal routing engine?</li>
-                    <li>What does your multimodal do that others don't?</li>
-                </ol>
-            </div>
-
-            <div class="plain-wide">
-                <h2>What this Means for Transit Providers</h2>
-                <ul>
-                    <li style="justify-self: center;">You get a product built by people advancing the field - not catching up to it</li>
-                    <li style="justify-self: center;">You get unparalleled efficiency from optimization that's the best in the industry</li>
-                    <li style="justify-self: center;">You get on-demand that delivers with lower cost and better performance than microtransit</li>
-                </ul>
-            </div>
-
-            <div style="text-align: center; margin-top: 4rem;">
-                <a href="#" onclick="showPage('contact')" class="btn-primary">Schedule a Free Consult with Our Experts</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Pricing Page -->
-    <div id="pricing" class="page-content">
-        <div class="pricing-container">
-            <h1 style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">Simple, Transparent Pricing</h1>
-            <p style="text-align: center; font-size: 1.25rem; color: var(--gray); margin-bottom: 3rem;">Choose the plan that fits your agency's needs</p>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Starter</h3>
-                    <div class="price">$0<span>/month</span></div>
-                    <p style="color: var(--gray); margin-bottom: 2rem;">Perfect for small agencies getting started</p>
-                    <ul>
-                        <li>Up to 5 vehicles</li>
-                        <li>5,000 trips/month</li>
-                        <li>Basic routing</li>
-                        <li>Mobile apps</li>
-                        <li>Email support</li>
-                    </ul>
-                    <a href="#" onclick="showPage('contact')" class="btn">Get Started</a>
-                </div>
-
-                <div class="pricing-card featured">
-                    <h3>Professional</h3>
-                    <div class="price">$0<span>/month</span></div>
-                    <p style="color: var(--gray); margin-bottom: 2rem;">For growing transit operations</p>
-                    <ul>
-                        <li>Up to 25 vehicles</li>
-                        <li>25,000 trips/month</li>
-                        <li>Advanced AI routing</li>
-                        <li>Custom branding</li>
-                        <li>Analytics dashboard</li>
-                        <li>Priority support</li>
-                    </ul>
-                    <a href="#" onclick="showPage('contact')" class="btn">Get Started</a>
-                </div>
-
-                <div class="pricing-card">
-                    <h3>Enterprise</h3>
-                    <div class="price">Custom</div>
-                    <p style="color: var(--gray); margin-bottom: 2rem;">For large-scale operations</p>
-                    <ul>
-                        <li>Unlimited vehicles</li>
-                        <li>Unlimited trips</li>
-                        <li>Custom integrations</li>
-                        <li>Dedicated support</li>
-                        <li>SLA guarantee</li>
-                        <li>On-premise option</li>
-                    </ul>
-                    <a href="#" onclick="showPage('contact')" class="btn">Contact Sales</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Why Modal Page -->
-    <div id="why-modal" class="page-content">
-        <div class="company-container">
-            <div class="mission-section">
-                <h1>Why Choose Modal?</h1>
-                <p>How we stand out from the rest.</p>
-            </div>
-
-            <div class="value-card">
-                <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">Multimodal, not Microtransit</h3>
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8;">
-                    Microtransit is, well, micro.  While microtransit focuses on direct on-demand service in small areas, it falls apart (and gets really expensive) at scale.<br><br>
-                    On the other hand, while fixed route transit is cheaper and highly efficient, it's nowhere near as convenient.  You have to get to and from the fixed routes yourself - which is a major barrier to use.<br><br>
-                    Multimodal combines the best of on-demand flexibility with fixed route efficiency by integrating <b>on-demand transit</b> and <b>fixed route transit</b> (buses, rail, and more) into the <b>same network</b>.</p>
-                
-                <div class="comparison-grid">
-                    <div class="comparison-box-better">
-                        <h3 class="gradient-bold">Multimodal</h3>
-                        <img src="Static/multimodal.svg" alt="Multimodal" style="display: block; width: 100%; height: auto;">
-                        <p class="comparison-caption">On-demand vehicles service the first</p>
-                    </div>
-                    <div class="comparison-box">
-                        <h3>Microtransit</h3>
-                        <img src="Static/microtransit.svg" alt="Microtransit" style="display: block; width: 100%; height: auto;">
-                        <p class="comparison-caption">Direct shuttle trips</p>
-                    </div>
-                </div>
-                
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8;">
-                    Multimodal transportation integrates multiple forms of transit—buses, trains, ride-sharing, bikes, and more—into a seamless network. Unlike microtransit, which focuses solely on small-vehicle on-demand service, multimodal solutions provide riders with comprehensive journey planning that combines the best of fixed route reliability with on-demand flexibility. This approach maximizes coverage, minimizes costs, and provides riders with more options to get where they need to go.
-                </p>
-                
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="#" onclick="showPage('research')" class="btn-secondary">See the Research →</a>
-                </div>
-            </div>
-
-            <div class="value-card">
-                <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🧮 Superior Optimization (No, Really)</h3>
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">As a research spinout from Georgia Tech, University of Michigan, and the NSF AI4OPT Institute, our optimization algorithms are peer-reviewed and published in top academic journals. We're not just claiming to be better—our competitors cite our research in their own papers. Our routing engine is built on years of academic research and validated through real-world deployments, giving you provably superior performance.</p>
-                
-                <div style="text-align: center;">
-                    <a href="#" onclick="showPage('research')" class="btn-secondary">See How Spare Cites Our Research →</a>
-                </div>
-            </div>
-
-            <div class="value-card">
-                <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🔧 All in One</h3>
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">Unlike competitors who piece together separate products, Modal offers everything as a single, integrated platform. This means consistent software updates, unified user experience, and no integration headaches. Your riders, drivers, and dispatchers all work within a cohesive ecosystem designed to work together seamlessly. This integration isn't just convenient—it fundamentally improves service quality and operational efficiency.</p>
-                
-                <div style="text-align: center;">
-                    <a href="#" onclick="showPage('case-studies')" class="btn-secondary">Learn Why Wilson, NC Switched from Via →</a>
-                </div>
-            </div>
-
-            <div class="value-card">
-                <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🎓 World-Class Talent</h3>
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">We directly recruit from top research labs at Georgia Tech, University of Michigan, and the NSF AI Institute. Our team is small, specialized, and high-performance—many of us have worked together for years in academic research before founding Modal. 60% of our team holds PhDs in optimization, computer science, and transportation engineering. When you work with Modal, you're getting world-class expertise applied to your transit challenges.</p>
-                
-                <div style="text-align: center;">
-                    <a href="#" onclick="showPage('contact')" class="btn-primary">Schedule a Free Consult with Our Experts</a>
-                </div>
-            </div>
-
-            <div style="background: linear-gradient(135deg, rgba(147, 201, 232, 0.15) 0%, rgba(233, 175, 88, 0.15) 100%); padding: 3rem; border-radius: 20px; text-align: center; margin-top: 4rem;">
-                <h2 style="font-size: 2rem; margin-bottom: 1rem;">Ready to Learn More About Modal?</h2>
-                <p style="font-size: 1.25rem; color: var(--gray); margin-bottom: 2rem;">Join agencies already using Modal</p>
-                <a href="#" onclick="showPage('contact')" class="btn-primary">Schedule a Demo</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Company Page -->
-    <div id="company" class="page-content">
-        <div class="company-container">
-            <div class="mission-section">
-                <h1>About Modal</h1>
-            </div>
-
-            <div class="story-box">
-                <h2>Our Story: 8 Years of Research with Transit Agencies</h2>
-                <div style="display: flex;">
-                    <div style="flex: 0 0 70%;">
-                        <p>Modal was born from <a href="#" onclick="showPage('research')">8 years of cutting-edge research</a> at Georgia Tech and the University of Michigan to solve a single problem: how to make on-demand transit affordable for transit agencies. Together with agency experts, our researchers developed the algorithms and optimization techniques that power modern on-demand transit.</p><br>
-                        <p>This wasn't just conceptual - <a href="#" onclick="showPage('research')">across $5M in pilots</a>, we worked side-by-side with transit professionals to learn, improve, and test our technology in real communities. These partnerships inspired us to found Modal, to bring affordable on-demand to every city.</p>
-                    </div>
-                    <div style="flex: 0 0 3%;"></div>
-                    <div style="flex: 0 0 27%;">
-                        <img src="Static/cat_smart_team.png" alt="Team" style="display: block; width: 100%; height: auto; border-radius: 12px;">
-                    </div>
-                </div>
-            </div>
-
-            <h2 style="text-align: center; font-size: 2rem; margin: 4rem 0 3rem;">Our Values</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <h3>🌍 Sustainability</h3>
-                    <p>We're committed to reducing carbon emissions and promoting environmentally friendly transportation solutions.</p>
-                </div>
-                <div class="value-card">
-                    <h3>♿ Accessibility</h3>
-                    <p>Public transit should be available to everyone. We build with accessibility at the core of everything we do.</p>
-                </div>
-                <div class="value-card">
-                    <h3>🔬 Innovation</h3>
-                    <p>We continuously push the boundaries of what's possible in transit technology.</p>
-                </div>
-                <div class="value-card">
-                    <h3>🤝 Community</h3>
-                    <p>We believe in the power of public transit to strengthen communities and improve quality of life.</p>
-                </div>
-            </div>
-
-            <div style="margin-top: 4rem; text-align: center;">
-                <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Join Our Team</h2>
-                <p style="font-size: 1.1rem; color: var(--gray); margin-bottom: 2rem;">We're looking for highly motivated people who share our passion for transforming public transit.</p>
-                <a href="#" onclick="showPage('careers')" class="btn-secondary">View Open Positions</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Careers Page -->
-    <div id="careers" class="page-content">
-        <div class="careers-container">
-            <h1 style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">Join Our Team</h1>
-            <p style="text-align: center; font-size: 1.25rem; color: var(--gray); margin-bottom: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">Join our community of builders passionate about using technology to improve mobility. We especially value those conducting interesting research or bringing unique perspectives to transportation challenges.</p>
-
-            <div style="background: linear-gradient(135deg, rgba(147, 201, 232, 0.3) 0%, rgba(233, 175, 88, 0.3) 100%); padding: 2rem; border-radius: 16px; margin-bottom: 3rem;">
-                <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Who We're Looking For</h2>
-                <p style="color: var(--gray); line-height: 1.8;">
-                    <b>Engineering Roles:</b> We're looking for highly motivated individuals with deep expertise in optimization, machine learning, transportation, or related fields.  If you're conducting transformative mobility research or have hands-on experience scaling transportation systems, we want to hear from you.
-                </p>
-                <br>
-                <p style="color: var(--gray); line-height: 1.8;">
-                    <b>Customer-Facing Roles:</b> We're seeking professionals with strong soft skills and experience working with transit agencies or a track record in B2G sales. Candidates with prior experience at Via, Spare, RideCo, or similar companies are especially encouraged to apply.
-                </p>
-            </div>
-
-            <h2 style="font-size: 2rem; margin-bottom: 2rem;">Open Positions</h2>
-
-            <div class="job-listing">
-                <h3>No open positions at this time</h3>
-            </div>
-
-            <!-- <div class="job-listing">
-                <h3>Senior Optimization Engineer</h3>
-                <div class="job-meta">Full-time • Atlanta, GA or Remote</div>
-                <p style="color: var(--gray);">Lead the development of our routing and optimization algorithms. PhD in Operations Research, Computer Science, or related field preferred.</p>
-            </div> -->
-
-            <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); margin-top: 3rem;">
-                <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Don't See a Perfect Fit?</h2>
-                <p style="color: var(--gray); margin-bottom: 2rem; line-height: 1.8;">Even if we're not actively hiring for your role, we'd love to hear from you. Leave your resume and cover letter below, and we'll consider you when positions open up.</p>
-                <a href="mailto:hr@ridemodal.com?subject=Consider%20Me%20for%20Future%20Positions" class="btn-primary">Send Us Your Resume</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Page -->
-    <div id="contact" class="page-content">
-        <div class="contact-container">
-            <h1 style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">Talk with Us</h1>
-            <p style="text-align: center; font-size: 1.25rem; color: var(--gray); margin-bottom: 3rem;">Want to learn more about Modal?  Get in touch with our team.</p>
-
-            <div class="contact-form">
-                <form onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label for="name">First Name *</label>
-                        <input type="text" id="firstname" name="firstname" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="name">Last Name *</label>
-                        <input type="text" id="lastname" name="lastname" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Phone Number *</label>
-                        <input type="phone" id="phone" name="phone" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="org">Organization *</label>
-                        <input type="text" id="org" name="org" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="role">Your Role</label>
-                        <select id="role" name="role">
-                            <option value="">Select your organization type</option>
-                            <option value="agency">Public Transit Operator/Agency</option>
-                            <option value="city">City or Municipality</option>
-                            <option value="university">University</option>
-                            <option value="healthcare">Healthcare System</option>
-                            <option value="corporation">Corporation</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Privacy Policy Page -->
-    <div id="privacy" class="page-content">
-        <div class="legal-container">
-            <h1>Privacy Policy</h1>
-            <p style="margin-bottom: 2rem;"><em>Last Updated: October 27, 2025</em></p>
-
-            <p>1. Information We Collect</p>
-            <p>Modal Mobility Corp ("Modal," "we," "us," or "our") collects information that you provide directly to us, including when you create an account, use our services, or communicate with us. This may include your name, email address, phone number, payment information, and location data.</p>
-
-            <p>2. How We Use Your Information</p>
-            <p>We use the information we collect to:</p>
-            <ul>
-                <li>Provide, maintain, and improve our services</li>
-                <li>Process transactions and send related information</li>
-                <li>Send technical notices and support messages</li>
-                <li>Respond to your comments and questions</li>
-                <li>Analyze usage patterns and trends</li>
-            </ul>
-
-            <p>3. Information Sharing</p>
-            <p>We do not sell your personal information. If you are a rider, we may share your information with:</p>
-            <ul>
-                <li>Transit agencies you use our services with</li>
-                <li>Service providers who assist in our operations</li>
-                <li>Law enforcement when required by law</li>
-                <li>Other parties with your consent</li>
-            </ul>
-            <p>If you are a transit provider, we may share your information with:</p>
-            <ul>
-                <li>Service providers who assist in our operations</li>
-                <li>Law enforcement when required by law</li>
-                <li>Other parties with your consent</li>
-            </ul>
-
-            <p>4. Data Security</p>
-            <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
-
-            <p>5. Your Rights</p>
-            <p>You have the right to access, correct, or delete your personal information. You may also object to or restrict certain processing of your data. To exercise these rights, please contact us at privacy@ridemodal.com.</p>
-
-            <p>6. Cookies and Tracking</p>
-            <p>We use cookies and similar tracking technologies to collect information about your browsing activities and to provide personalized content and advertising.</p>
-
-            <p>7. Children's Privacy</p>
-            <p>Our services are not directed to unaccompanied minors under 13, and we do not knowingly collect personal information from unaccompanied minors under 13.</p>
-
-            <p>8. Changes to This Policy</p>
-            <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date.</p>
-
-            <p>9. Contact Us</p>
-            <p>If you have questions about this privacy policy, please contact us at:</p>
-            <p>Modal Mobility Corp<br>
-            Email: legal@ridemodal.com<br>
-            Phone: +1 (404) 981-2354<br>
-            Address: 75 5th St NW, Atlanta, GA 30332</p>
-        </div>
-    </div>
-
-    <!-- Terms of Service Page -->
-    <div id="tos" class="page-content">
-        <div class="legal-container">
-            <h1>Terms of Service</h1>
-            <p style="margin-bottom: 2rem;"><em>Last Updated: October 27, 2025</em></p>
-
-            <p>1. Acceptance of Terms</p>
-            <p>By accessing or using Modal's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using our services.</p>
-
-            <p>2. Description of Service</p>
-            <p>Modal provides a mobility platform for transit agencies, including routing optimization, dispatch management, rider applications, and related services. We reserve the right to modify or discontinue any aspect of our services at any time.</p>
-
-            <p>3. User Accounts</p>
-            <p>You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must notify us immediately of any unauthorized use of your account.</p>
-
-            <p>4. Acceptable Use</p>
-            <p>You agree not to:</p>
-            <ul>
-                <li>Use our services for any illegal purpose</li>
-                <li>Interfere with or disrupt our services</li>
-                <li>Attempt to gain unauthorized access to our systems</li>
-                <li>Transmit any viruses, malware, or harmful code</li>
-                <li>Violate any applicable laws or regulations</li>
-            </ul>
-
-            <p>5. Intellectual Property</p>
-            <p>All content, features, and functionality of our services are owned by Modal Mobility Corp and are protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written permission.</p>
-
-            <p>6. Payment Terms</p>
-            <p>If you purchase services from Modal, you agree to pay all fees according to the pricing and payment terms presented to you. All fees are non-refundable unless otherwise stated.</p>
-
-            <p>7. Limitation of Liability</p>
-            <p>To the maximum extent permitted by law, Modal shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly.</p>
-
-            <p>8. Indemnification</p>
-            <p>You agree to indemnify and hold harmless Modal and its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses arising out of your use of our services or violation of these terms.</p>
-
-            <p>9. Termination</p>
-            <p>We reserve the right to terminate or suspend your account and access to our services at our sole discretion, without notice, for conduct that we believe violates these Terms of Service or is harmful to other users, us, or third parties, or for any other reason.</p>
-
-            <p>10. Governing Law</p>
-            <p>These Terms of Service shall be governed by and construed in accordance with the laws of the State of Georgia, without regard to its conflict of law provisions.</p>
-
-            <p>11. Changes to Terms</p>
-            <p>We reserve the right to modify these terms at any time. We will notify users of any material changes by posting the new Terms of Service on this page and updating the "Last Updated" date.</p>
-
-            <p>12. Contact Information</p>
-            <p>For questions about these Terms of Service, please contact us at:</p>
-            <p>Modal Mobility Corp<br>
-            Email: legal@ridemodal.com<br>
-            Phone: +1 (404) 981-2354<br>
-            Address: 75 5th St NW, Atlanta, GA 30332</p>
-        </div>
-    </div>
-
-    <!-- 404 Error Page -->
-    <div id="404" class="page-content">
-        <div class="error-404">
-            <div class="error-404-graphic">404</div>
-            <h1>Page Not Found</h1>
-            <p>Looks like you've wandered off the route!  You're in good company - <b>404</b> is Atlanta's area code, and we're proud to call this city home.</p>
-            <p style="margin-top: 1rem;">Let's get you to your destination.</p>
-            <a href="#" onclick="showPage('home')" class="btn-primary" style="margin-top: 2rem;">Take Me Home</a>
-        </div>
-    </div>
-
     <div id="main-footer-placeholder"></div>
-
     <script src="scripts.js"></script>
-    <script>
-
-        function showPage(pageId) {
-            // Hide all pages
-            const pages = document.querySelectorAll('.page-content');
-            pages.forEach(page => page.classList.remove('active'));
-            
-            // Show selected page
-            const selectedPage = document.getElementById(pageId);
-            if (selectedPage) {
-                selectedPage.classList.add('active');
-            } else {
-                // If page doesn't exist, show 404
-                document.getElementById('404').classList.add('active');
-            }
-            
-            // Scroll to top
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            
-            return false;
-        }
-
-        async function handleSubmit(event) {
-            event.preventDefault();
-
-            const form = event.target;
-            const data = new FormData(form);
-            const params = new URLSearchParams(data);
-
-            fetch("https://script.google.com/macros/s/AKfycbzKAeY6wHrEoZRfO5On7h0duI2meTHCOQVlzXQNrDAPOhBJBx40HL4MW5X-s4tG6hbv/exec", {
-                method: "POST",
-                body: params
-            }).catch(console.error);
-
-            const message = document.createElement("p");
-            message.textContent = "\nThank you! We'll be in touch shortly.";
-            form.appendChild(message);
-            form.reset();
-        }
-
-
-        // Handle initial page load
-        window.addEventListener('load', () => {
-            const hash = window.location.hash.substring(1);
-            if (hash) {
-                showPage(hash);
-            }
-        });
-    </script>
-    <script type="text/javascript"
-            src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init("service_0iv6k4k");
-    })();
-    </script>
 </body>
 </html>

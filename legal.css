@@ -82,7 +82,7 @@
 .legal-container p {
     color: var(--gray);
     margin-bottom: 1rem;
-    line-height: 1.8;
+    font-size: 1rem;
 }
 
 .legal-container ul {
