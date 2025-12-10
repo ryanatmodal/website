@@ -255,6 +255,11 @@ p {
     color: white;
 }
 
+.small-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
 .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
