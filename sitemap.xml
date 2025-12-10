@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://ridemodal.com/</loc>
+  <lastmod>2025-12-10T22:30:22+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ridemodal.com/contact</loc>
+  <lastmod>2025-12-10T22:30:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ridemodal.com/case-studies</loc>
+  <lastmod>2025-12-10T22:30:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ridemodal.com/research</loc>
+  <lastmod>2025-12-10T22:30:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ridemodal.com/company</loc>
+  <lastmod>2025-12-10T22:30:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ridemodal.com/papers</loc>
+  <lastmod>2025-12-10T22:30:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ridemodal.com/why-modal</loc>
+  <lastmod>2025-12-10T22:30:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ridemodal.com/careers</loc>
+  <lastmod>2025-12-10T22:30:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
