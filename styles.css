@@ -4,10 +4,11 @@
     box-sizing: border-box;
     --primary: #E9AF58;
     --primary-hover: #D89F48;
+    --primary-light: #e7c490;
     --accent: #93C9E8;
     --strong-accent: #52aee3;
     --dark: #2F4651;
-    --light-dark: #2f4651a4;
+    --light-dark: #55636a;
     --gray: #666;
     --light-bg: #F8FAFB;
     --subtle-gray: #d9d9d9;
@@ -205,12 +206,12 @@ nav {
 .submit-btn {
     width: 100%;
     background: #E9AF58;
-    color: white;
+    color: var(--dark);
     padding: 1rem 2rem;
     border: none;
     border-radius: 12px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 550;
     cursor: pointer;
     transition: all 0.3s;
 }

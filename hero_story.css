@@ -28,7 +28,7 @@
 }
 
 Subtle accent shapes
-.hero::before {
+.gradient-back::before {
     content: '';
     position: absolute;
     top: -100px;
@@ -41,7 +41,7 @@ Subtle accent shapes
     filter: blur(100px);
 }
 
-.hero::after {
+.gradient-back::after {
     content: '';
     position: absolute;
     bottom: -100px;
@@ -120,6 +120,28 @@ h3 {
     left: 50%; 
     transform: translate(-50%, -50%) rotate(1deg); 
     background-image: url('Static/circle.svg'); 
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+}
+
+.brushed {
+    margin-top: 0.2rem;
+    position: relative; 
+    padding: 0 5px; 
+    display: inline-block;
+    z-index: 1;
+}
+
+.brushed::after {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    width: 115%;  
+    height: 150%; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(0deg); 
+    background-image: url('Static/brushed.svg'); 
     background-size: 100% 100%; 
     background-repeat: no-repeat;
 }
@@ -204,6 +226,16 @@ p {
     fill: var(--red);
 }
 
+.arrow {
+    height: 10px;
+    margin-bottom: 1px;
+}
+
+.btn-secondary:hover .arrow {
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
 /* Buttons */
 .button-group {
     display: flex;
@@ -252,6 +284,26 @@ p {
 
 .btn-secondary:hover {
     background: var(--dark);
+    color: white;
+}
+
+.footer-btn {
+    background: var(--dark);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 2px solid var(--light-dark);
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background: var(--light-dark);
     color: white;
 }
 
