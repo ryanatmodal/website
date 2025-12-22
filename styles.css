@@ -7,6 +7,7 @@
     --primary-light: #e7c490;
     --accent: #93C9E8;
     --strong-accent: #52aee3;
+    --accent-light: #c2dceb;
     --dark: #2F4651;
     --light-dark: #55636a;
     --gray: #666;
@@ -238,55 +239,4 @@ nav {
 .marta {
     background-image: url('Static/marta_reach_vehicles.jpg');
     z-index: 1;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    .stats {
-        grid-template-columns: 1fr;
-    }
-
-    .nav-container {
-        padding: 1rem 2rem;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .feature-detail {
-        grid-template-columns: 1fr;
-    }
-
-    .feature-detail:nth-child(even) {
-        direction: ltr;
-    }
-
-    .comparison-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .company-container {
-        padding: 8rem 2rem 4rem;
-    }
-
-    .features {
-        padding: 6rem 2rem;
-    }
-
-    footer {
-        padding: 4rem 2rem 2rem;
-    }
 }

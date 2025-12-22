@@ -397,6 +397,19 @@ p {
     font-size: 1.2rem;
 }
 
+.story-content {
+    display: flex;
+}
+
+.story-text {
+    flex: 0 0 65%;
+    margin-right: 3%;
+}
+
+.story-image {
+    flex: 0 0 32%;
+}
+
 .olink {
     color: var(--primary);
     text-decoration: none;

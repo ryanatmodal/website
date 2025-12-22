@@ -110,6 +110,7 @@
     margin-bottom: 0.5rem;
     line-height: 3rem;
     color: var(--dark);
+    width: fit-content;
 }
 
 .case-logo {
@@ -177,6 +178,19 @@
     border-radius: 12px;
 }
 
+.why-section {
+    flex: 0 0 62%;
+}
+
+.why-photo {
+    flex: 0 0 36%;
+}
+
+.why-photo img {
+    width: 100%;
+    border-radius: 12px;
+}
+
 .case-publisher {
     width: 60%;
     height: 20px;
@@ -211,4 +225,14 @@
     width: 15px;
     height: auto;
     display: block;
+}
+
+.unique {
+    background-color: var(--accent-light);
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+}
+
+.light-primary {
+    background-color: var(--primary-light);
 }

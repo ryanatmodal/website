@@ -1,0 +1,267 @@
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.4rem !important;
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-size: 1.9rem !important;
+    }
+    
+    h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Reduce padding/margins for tighter mobile layout */
+    .careers-container,
+    .pricing-container,
+    .contact-container,
+    .legal-container {
+        padding: 6rem 1.5rem 3rem !important;
+    }
+
+    .company-container {
+        padding: 6rem 0 1.5rem !important;
+    }
+    
+    .plain-wide,
+    .floating-pop {
+        margin: 2rem !important;
+    }
+
+    .story-box {
+        margin: 2rem !important;
+        padding: 2rem 1.5rem !important;
+    }
+
+    .story-content {
+        flex-direction: column !important;
+    }
+    
+    .story-text, .story-image {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+
+    .story-image {
+        margin-top: 20px !important;
+    }
+    
+    .value-card,
+    .feature-card,
+    .job-listing,
+    .case-study {
+        padding: 1.5rem !important;
+        margin: 1.5rem 0 !important;
+    }
+
+    .values-grid,
+    .value-card {
+        grid-template-columns: 1fr !important;
+        margin: 0 !important;
+        gap: 0 !important;
+        min-height: 0 !important;
+    }
+
+    .value-card {
+        margin-bottom: 2rem !important;
+    }
+
+    .case-study h2 {
+        margin-top: 0 !important;
+        line-height: 2.4rem !important;
+    }
+    
+    .case-stat-number {
+        font-size: 2rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    .nav-container {
+        padding: 0 !important;
+    }
+
+    .logo {
+        padding: 0 2rem !important;
+        height: 30px !important;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: fit-content;
+    }
+
+    
+    /* Hero and large sections */
+    .hero {
+        padding-top: 70px !important;
+    }
+    
+    .hero-content {
+        width: 100% !important;
+        padding: 2rem 1.5rem !important;
+    }
+
+    .comparison-grid {
+        width: 100% !important;
+        margin: 1rem 0 !important;
+    }
+
+    .comparison-box {
+        padding: 1rem !important;
+    }
+
+    .comparison-box img {
+        margin-top: -0.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .modal-changes {
+        flex-direction: column !important;
+        margin: 1rem 0 !important;
+    }
+
+    .modal-changes img {
+        height: 35px !important;
+        width: auto !important;
+        object-fit: contain !important;
+    }
+    
+    .modal-changes h2 {
+        font-size: 2rem !important;
+    }
+    
+    /* Stats and grids */
+    .stats,
+    .features-grid,
+    .pricing-grid,
+    .case-study-stats {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    .stat-number {
+        font-size: 2.2rem !important;
+    }
+    
+    /* Feature details - stack vertically */
+    .features {
+        padding: 3rem !important;
+    }
+
+    .feature-card {
+        margin: 0 !important;
+    }
+
+    .feature-detail {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        direction: ltr !important;
+    }
+    
+    .feature-detail > * {
+        direction: ltr !important;
+    }
+    
+    .feature-image {
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    /* quote */
+    .top-left {
+        left: -15px !important;
+    }
+
+    .bottom-right {
+        right: -15px !important;
+    }
+    
+    /* Case studies */
+    .case-footer-flex {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
+    
+    .why-section,
+    .case-news,
+    .why-photo,
+    .case-photo {
+        flex: none !important;
+        width: 100% !important;
+    }
+    
+    .tags {
+        flex-wrap: wrap;
+    }
+    
+    /* Buttons */
+    .button-group {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    /* Quote box */
+    .quote-box {
+        margin: 2rem 1rem !important;
+        padding: 2rem 1rem !important;
+    }
+    
+    .quote {
+        font-size: 1.3rem !important;
+        padding: 0 1rem !important;
+    }
+    
+    /* Contact form */
+    .contact-form {
+        margin-top: -1rem !important;
+        padding: 0 !important;
+        background: var(--light-bg) !important;
+        box-shadow: 0;
+    }
+    
+    .form-group {
+        margin-bottom: 1.2rem !important;
+    }
+    
+    /* footer */
+    footer {
+        padding: 2rem 1.5rem 2rem !important;
+    }
+
+    .footer-column {
+        margin-bottom: -1rem !important;
+    }
+
+    .footer-column h4 {
+        margin: 0 !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .footer-column ul li {
+        margin-top: 0.25rem !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    .footer-bottom {
+        flex-direction: column !important;
+    }
+    
+    .image-background {
+        padding: 3rem 1.5rem !important;
+    }
+    
+    /* specialized */
+    .floating-pop {
+        margin: 2rem 0rem !important;
+    }
+    
+    .error-404-graphic {
+        font-size: 7rem !important;
+    }
+}

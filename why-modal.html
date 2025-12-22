@@ -20,6 +20,7 @@
     <link rel="icon" type="image/png" sizes="48x48" href="/Static/modal_favicon_48_48.png">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="product_pricing_company.css">
     <link rel="stylesheet" href="legal.css">
     <link rel="stylesheet" href="hero_story.css">
@@ -31,120 +32,129 @@
 </head>
 <body>
     <div id="main-header-placeholder"></div>
-    <div id="why-modal" class="page-content">
+    <div id="why-modal" class="page-content active">
         <div class="company-container">
 
             <div class="mission-section">
-                <h1>Why Modal</h1>
+                <h1>Why Choose Modal?</h1>
+                <p>What Modal offers that nobody else does</p>
             </div>
 
-            <div class="plain-wide">
-                <p>Modal's software enables transit agencies to offer <b>on-demand transit at a 3-5x lower cost per rider</b> than microtransit.  We achieve this through our multimodal concept and <a href="papers" class="olink">industry-leading (yes, really) optimization</a>.  Our mission is to create on-demand that works for your community.</p>
-            
-                <p>Multimodal (industry leader)</p>
-                <p>Only major player focusing on multimodal</p>
-                <p>Superior Optimization (unique to modal)</p>
-                <p>Best optimization</p>
-                <p>Innovation</p>
-                <p>Everyone says they innovate, we back it up</p>
-                <p></p>
-                <p></p>
-            </div>
-
-            <div class="plain-wide">
-                <div class="values-grid">
-                    <div class="value-card">
-                        <h3>🚌 Agencies First</h3>
-                        <p>Transit providers are our sole focus.  Every feature, every optimization model, every deployment decision is built to achieve the goals of our agency partners.</p>
-                        <div style="margin: 1rem 0;">
-                            <img src="Static/pascal_marta_speech.png" alt="Modal co-founder Pascal Van Hentenryck speaks at a pilot launch event with MARTA" class="picture">
-                            <p class="img-caption">Modal co-founder <a href="https://en.wikipedia.org/wiki/Pascal_Van_Hentenryck">Pascal Van Hentenryck</a> speaks at a launch event for MARTA Reach, a $1.2M pilot with MARTA</p>
-                        </div>
-                        <p>We’ve worked directly with agencies for nearly a decade.  From <a class="olink" href="case-studies">small towns to suburbs to major metros</a>, these partnerships shaped our operating philosophy and product: cost-effective, scalable, reliable on-demand transit.</p>
-                        <p>You deserve a partner that shows up every day, every hour, for every rider.  We run true 24/7 support, with an engineer on-call to deploy fixes in real time, not two weeks from now.</p>
+            <div class="case-study">
+                <div class="tags">
+                    <h2>True Multimodal</h2>
+                    <div class="tag unique"><b>Unique to Modal</b></div>
+                </div>
+                <div class="case-footer-flex" style="margin: 0 auto;">
+                    <div class="why-section">
+                        <p>Competitors offer basic multimodal features, but without deep optimization, multimodal is just microtransit with extra steps.</p>
+                        <p><b>We've spent 8 years pioneering the optimization for true multimodal operations.</b> Modal is the only platform designed around multimodal, not as a feature: using on-demand only for last mile delivers <b>3-5x lower cost per rider than microtransit</b>.</p>
+                        <a href="case-studies" class="btn-secondary small-btn">
+                            See our Results
+                            <span><img src="Static/arrow.svg" class="arrow"></span>
+                        </a>
+                    </div>
+                    <div class="why-photo">
+                        <img src="Static/reach_rider_disembark.jpg" alt="Rider disembarking MARTA Reach vehicle" style="width: 100%;">
                     </div>
                 </div>
             </div>
 
-            <div class="value-card">
-                <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">Multimodal, not Microtransit</h3>
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8;">
-                    Microtransit is, well, micro.  While microtransit focuses on direct on-demand service in small areas, it falls apart (and gets really expensive) at scale.<br><br>
-                    On the other hand, while fixed route transit is cheaper and highly efficient, it's nowhere near as convenient.  You have to get to and from the fixed routes yourself - which is a major barrier to use.<br><br>
-                    Multimodal combines the best of on-demand flexibility with fixed route efficiency by integrating <b>on-demand transit</b> and <b>fixed route transit</b> (buses, rail, and more) into the <b>same network</b>.</p>
-                
-                <div class="comparison-grid">
-                    <div class="comparison-box-better">
-                        <h3 class="gradient-bold">Multimodal</h3>
-                        <img src="Static/multimodal.svg" alt="Multimodal" style="display: block; width: 100%; height: auto;">
-                        <p class="comparison-caption">On-demand vehicles service the first</p>
+            <div class="case-study">
+                <div class="tags">
+                    <h2>Superior Optimization</h2>
+                    <div class="tag unique"><b>Unique to Modal</b></div>
+                </div>
+                <div class="case-footer-flex" style="margin: 0 auto;">
+                    <div class="why-section">
+                        <p>Modal's truly industry-leading optimization is built by the researchers who've pioneered the field.</p>
+                        <p>We publish some of our algorithms, something no other vendor does, for transparency. <b>Don't take our word for superior performance - see the math behind our results.</b></p>
+                        <a href="papers" class="btn-secondary small-btn">
+                            Explore our Algorithms
+                            <span><img src="Static/arrow.svg" class="arrow"></span>
+                        </a>
                     </div>
-                    <div class="comparison-box">
-                        <h3>Microtransit</h3>
-                        <img src="Static/microtransit.svg" alt="Microtransit" style="display: block; width: 100%; height: auto;">
-                        <p class="comparison-caption">Direct shuttle trips</p>
+                    <div class="why-photo">
+                        <img src="Static/pascal_board.jpg" alt="Pascal writing on the board" style="width: 100%;">
                     </div>
                 </div>
-                
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8;">
-                    Multimodal transportation integrates multiple forms of transit - buses, trains, ride-sharing, bikes, and more - into a seamless network. Unlike microtransit, which focuses solely on small-vehicle on-demand service, multimodal solutions provide riders with comprehensive journey planning that combines the best of fixed route reliability with on-demand flexibility. This approach maximizes coverage, minimizes costs, and provides riders with more options to get where they need to go.
-                </p>
-                
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="research" class="btn-secondary">
-                        See the Research
-                        <img src="Static/arrow.svg" class="arrow">
-                    </a>
+            </div>
+
+            <div class="case-study">
+                <div class="tags">
+                    <h2>Unparalleled Innovation</h2>
+                    <div class="tag unique"><b>Unique to Modal</b></div>
+                </div>
+                <div class="case-footer-flex" style="margin: 0 auto;">
+                    <div class="why-section">
+                        <p>We take innovation seriously.  Modal is the <b>only company on the market that maintains a research to commercial pipeline</b>.</p>
+                        <p>This means we have research licenses with labs that give us direct access to new optimization breakthroughs immediately as they're developed, not years later like our competitors do.</p>
+                        <a href="research" class="btn-secondary small-btn">
+                            See our Research
+                            <span><img src="Static/arrow.svg" class="arrow"></span>
+                        </a>
+                    </div>
+                    <div class="why-photo">
+                        <img src="Static/ai4opt_team.jpg" alt="AI4OPT team at a conference" style="width: 100%;">
+                    </div>
                 </div>
             </div>
 
-            <div class="value-card">
-                <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🧮 Superior Optimization (No, Really)</h3>
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">As a research spinout from Georgia Tech, University of Michigan, and the NSF AI4OPT Institute, our optimization algorithms are peer-reviewed and published in top academic journals. We're not just claiming to be better—our competitors cite our research in their own papers. Our routing engine is built on years of academic research and validated through real-world deployments, giving you provably superior performance.</p>
-                
-                <div style="text-align: center;">
-                    <a href="research" class="btn-secondary">
-                        See How Spare Cites Our Research
-                        <span><img src="Static/arrow.svg" class="arrow"></span>
-                    </a>
+            <div class="quote-box gradient-background">
+                <img src="Static/quote.svg" alt="Quote Icon" class="picture top-left">
+                <p class="quote">Before it would take me about an hour ... to get to work. <br>Now, <b>about 10-15 minutes</b>.</p>
+                <p class="attribution">— Pilot Rider</p>
+                <img src="Static/quote.svg" alt="Quote Icon" class="picture bottom-right">
+            </div>
+
+            <div class="case-study">
+                <div class="tags">
+                    <h2>Your System, Our Priority</h2>
+                    <div class="tag unique light-primary"><b>Better than Competitors</b></div>
+                </div>
+                <div class="case-footer-flex" style="margin: 0 auto;">
+                    <div class="why-section">
+                        <p><b>You shouldn't have to fight your vendor to solve a problem or get a custom feature</b>. With Modal, you get a partner who treats your riders as our riders.</p>
+                        <p>We run true 24/7 support, with an engineer on-call to deploy fixes in real time, not two weeks from now. You deserve a partner that shows up every day, every hour, for every rider.</p>
+                        <a href="company#values" class="btn-secondary small-btn">
+                            View our Values
+                            <span><img src="Static/arrow.svg" class="arrow"></span>
+                        </a>
+                    </div>
+                    <div class="why-photo">
+                        <img src="Static/pascal_showing_up.jpg" alt="CAT SMART Launch" style="width: 100%;">
+                    </div>
                 </div>
             </div>
 
-            <div class="value-card">
-                <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🔧 All in One</h3>
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">Unlike competitors who piece together separate products, Modal offers everything as a single, integrated platform. This means consistent software updates, unified user experience, and no integration headaches. Your riders, drivers, and dispatchers all work within a cohesive ecosystem designed to work together seamlessly. This integration isn't just convenient—it fundamentally improves service quality and operational efficiency.</p>
-                
-                <div style="text-align: center;">
-                    <a href="case-studies" class="btn-secondary">
-                        Learn Why Wilson, NC Switched from Via
-                        <span><img src="Static/arrow.svg" class="arrow"></span>
-                    </a>
+            <div class="case-study">
+                <div class="tags">
+                    <h2>Direct Access</h2>
+                    <div class="tag unique light-primary"><b>Better than Competitors</b></div>
+                </div>
+                <div class="case-footer-flex" style="margin: 0 auto;">
+                    <div class="why-section">
+                        <p>With Modal, you can <b>speak directly with leadership, engineers, and researchers</b> when you need to.</p>
+                        <p>Whether you want to analyze performance or pressure test a new idea, the people who built the system will talk with you - clearly, honestly, and without a filter. We believe trust is built through transparency and availability.</p>
+                        <a href="research" class="btn-secondary small-btn">
+                            Talk with Us
+                            <span><img src="Static/arrow.svg" class="arrow"></span>
+                        </a>
+                    </div>
+                    <div class="why-photo">
+                        <img src="Static/kevin_view.png" alt="Modal Mobility representative" style="width: 100%;">
+                    </div>
                 </div>
             </div>
 
-            Transit agencies deserve a partner who shows up—every day, every hour, for every rider. At Modal, “Agencies First” isn’t a slogan; it’s how we operate. We run true 24/7 support, with an engineer on-call at all times who can jump in, diagnose issues, and deploy fixes in real time. No ticket queues. No two-week delays. Just humans who care about your service as much as you do.
-We're not a vendor that disappears after kickoff. 
-We know agencies run lean, so we do too. We’re scrappier than legacy vendors—faster to respond, faster to iterate, and fully aligned with your success. With Modal, agencies get a partner who listens, adapts, and treats your riders like our riders.
-
-            <div class="value-card">
-                <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem;">🎓 World-Class Talent</h3>
-                <p style="color: var(--gray); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">We directly recruit from top research labs at Georgia Tech, University of Michigan, and the NSF AI Institute. Our team is small, specialized, and high-performance—many of us have worked together for years in academic research before founding Modal. 60% of our team holds PhDs in optimization, computer science, and transportation engineering. When you work with Modal, you're getting world-class expertise applied to your transit challenges.</p>
-                
-                <div style="text-align: center;">
+            <div class="plain-wide" style="margin-top: 6rem; margin-bottom: 0;">
+                <h2>See Why Modal is Different</h2>
+                <div class="button-group" style="margin: 1rem auto;">
                     <a href="contact" class="btn-primary">
-                        Schedule a Free Consult with Our Experts
+                        Talk with Us
                         <span><img src="Static/arrow.svg" class="arrow"></span>
                     </a>
                 </div>
-            </div>
-
-            <div style="background: linear-gradient(135deg, rgba(147, 201, 232, 0.15) 0%, rgba(233, 175, 88, 0.15) 100%); padding: 3rem; border-radius: 20px; text-align: center; margin-top: 4rem;">
-                <h2 style="font-size: 2rem; margin-bottom: 1rem;">Ready to Learn More About Modal?</h2>
-                <p style="font-size: 1.25rem; color: var(--gray); margin-bottom: 2rem;">Join agencies already using Modal</p>
-                <a href="contact" class="btn-primary">
-                    Schedule a Demo
-                    <span><img src="Static/arrow.svg" class="arrow"></span>
-                </a>
             </div>
         </div>
     </div>
