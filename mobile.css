@@ -20,6 +20,14 @@
         padding: 6rem 1.5rem 3rem !important;
     }
 
+    .product-features {
+        padding: 0rem 1.5rem 2rem !important;
+    }
+
+    .small-mleft {
+        margin-left: 0;
+    }
+
     .company-container {
         padding: 6rem 0 1.5rem !important;
     }
@@ -77,13 +85,98 @@
         margin-bottom: 0 !important;
     }
 
+    /* Nav */
+    nav {
+        position: fixed;
+        top: 0;
+    }
+    
     .nav-container {
+        padding: 1rem 2rem !important;
+    }
+    
+    .logo {
+        height: 30px !important;
         padding: 0 !important;
     }
-
-    .logo {
-        padding: 0 2rem !important;
-        height: 30px !important;
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 60%;
+        max-width: 300px;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        padding: 3rem 0 2rem;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        transition: right 0.3s ease;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links > li {
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 1rem 1.5rem;
+        width: 100%;
+    }
+    
+    .nav-links .cta-button {
+        margin: 1rem 1.5rem;
+        width: calc(100% - 3rem);
+        text-align: center;
+    }
+    
+    .dropdown-content {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        background: rgba(0,0,0,0.02);
+        display: none;
+    }
+    
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown-toggle::after {
+        content: '▼';
+        font-size: 0.8em;
+        margin-left: 0.5rem;
+    }
+    
+    .dropdown.active > a:first-child::after {
+        content: '▲';
+        margin-left: 0.5rem;
+    }
+    
+    .dropdown > a:first-child::after {
+        content: '▼';
+        font-size: 0.8em;
+        margin-left: 0.5rem;
+    }
+    
+    .dropdown-content a {
+        padding: 0.75rem 2rem 0.75rem 3rem;
+        font-size: 0.95em;
     }
 
     .btn-primary,
@@ -91,7 +184,6 @@
         width: fit-content;
     }
 
-    
     /* Hero and large sections */
     .hero {
         padding-top: 70px !important;
@@ -166,15 +258,16 @@
     .feature-image {
         width: 100% !important;
         height: 250px !important;
+        margin: 1rem 0 !important;
     }
 
     /* quote */
     .top-left {
-        left: -15px !important;
+        left: 0 !important;
     }
 
     .bottom-right {
-        right: -15px !important;
+        right: 0 !important;
     }
     
     /* Case studies */
@@ -193,6 +286,12 @@
     
     .tags {
         flex-wrap: wrap;
+        gap: 0 !important;
+    }
+
+    .unique {
+        margin-left: 0 !important;
+        margin-right: auto !important;
     }
     
     /* Buttons */
@@ -209,7 +308,7 @@
     
     .quote {
         font-size: 1.3rem !important;
-        padding: 0 1rem !important;
+        padding: 0 1.5rem !important;
     }
     
     /* Contact form */

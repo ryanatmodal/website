@@ -341,3 +341,7 @@
 .pricing-card.featured .btn:hover {
     background: var(--primary-hover);
 }
+
+.small-mleft {
+    margin-left: 0.4rem;
+}
