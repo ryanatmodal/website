@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-margin-top: 80px;
+}
+
+:root {
     --primary: #E9AF58;
     --primary-hover: #D89F48;
     --primary-light: #e7c490;
@@ -20,7 +24,6 @@
     --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
     --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
     --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
-    scroll-margin-top: 80px;
 }
 
 body {
