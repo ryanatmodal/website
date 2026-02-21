@@ -27,7 +27,6 @@
     background-clip: text;
 }
 
-Subtle accent shapes
 .gradient-back::before {
     content: '';
     position: absolute;
