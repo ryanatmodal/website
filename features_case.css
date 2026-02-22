@@ -233,6 +233,12 @@
     margin-left: auto;
 }
 
+.tag-mm {
+    background-color: var(--accent-very-light);
+    margin: 1rem 4rem;
+    box-shadow: var(--shadow-md);
+}
+
 .light-primary {
     background-color: var(--primary-light);
 }

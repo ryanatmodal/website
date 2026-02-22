@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore how Modal leverages research-based optimization to achieve a 3-5x lower cost per rider than microtransit.">
+    <meta name="keywords" content="Modal Mobility, Modal, modal research, modal mobility research, multimodal transit, multimodal transit research">
+    <meta name="author" content="Modal Mobility">
+    <meta property="og:title" content="What is multimodal transit?  Why does it matter?">
+    <meta property="og:description" content="Explore how Modal leverages research-based optimization to achieve a 3-5x lower cost per rider than microtransit.">
+    <meta property="og:url" content="https://ridemodal.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ridemodal.com/Static/modal_card.png">
+    <meta property="og:image:alt" content="Modal: Research-Backed Transit Software">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://ridemodal.com/Static/modal_card.png">
+    <meta name="robots" content="index, follow">
+    <title>Multimodal</title>
+    <link rel="icon" type="image/svg+xml" href="/Static/modal_favicon.svg">
+    <link rel="icon" type="image/png" sizes="48x48" href="/Static/modal_favicon_48_48.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="product_pricing_company.css">
+    <link rel="stylesheet" href="legal.css">
+    <link rel="stylesheet" href="hero_story.css">
+    <link rel="stylesheet" href="features_case.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --mv-bg:          #f8fafc;
+      --mv-surface:     #ffffff;
+      --mv-border:      #e2e8f0;
+      --mv-text:        #1e293b;
+      --mv-text-muted:  #64748b;
+      --mv-radius:      12px;
+      --mv-shadow:      0 2px 16px rgba(0,0,0,.07);
+    }
+
+    .mv-widget {
+      color: var(--mv-text);
+      background: var(--mv-bg);
+      border-radius: var(--mv-radius);
+      border: 1px solid var(--mv-border);
+      margin: 1rem 0;
+      box-shadow: var(--mv-shadow);
+      overflow: hidden;
+    }
+
+    /* ── Two-column layout ── */
+    .mv-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: 420px;
+    }
+
+    @media (max-width: 720px) {
+      .mv-layout { grid-template-columns: 1fr; }
+    }
+
+    /* ── Left panel ── */
+    .mv-panel {
+      padding: 28px 24px;
+      background: var(--mv-surface);
+      border-right: 1px solid var(--mv-border);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    @media (max-width: 720px) {
+      .mv-panel { border-right: none; border-bottom: 1px solid var(--mv-border); }
+    }
+
+    .mv-panel-title {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--mv-text-muted);
+    }
+
+    /* Input groups */
+    .mv-field { display: flex; flex-direction: column; gap: 6px; }
+
+    .mv-field label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--mv-text-muted);
+    }
+
+    .mv-field-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--mv-border);
+      border-radius: 8px;
+      padding: 0 12px;
+      background: var(--mv-bg);
+      transition: border-color .15s;
+    }
+    .mv-field-row:focus-within { border-color: var(--primary); }
+
+    .mv-field-row span {
+      font-size: 14px;
+      color: var(--mv-text-muted);
+    }
+
+    .mv-field-row input[type="number"] {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 14px;
+      color: var(--mv-text);
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    /* Sliders */
+    .mv-slider-wrap { display: flex; flex-direction: column; gap: 8px; }
+
+    .mv-slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .mv-slider-header label { font-size: 13px; font-weight: 500; color: var(--mv-text-muted); }
+    .mv-slider-val { font-size: 13px; color: var(--primary); font-weight: 500; }
+
+    input[type="range"].mv-range {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--mv-border);
+      outline: none;
+      cursor: pointer;
+    }
+    input[type="range"].mv-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 2px solid white;
+      box-shadow: 0 1px 4px rgba(0,0,0,.2);
+      transition: transform .1s;
+    }
+    input[type="range"].mv-range::-webkit-slider-thumb:active { transform: scale(1.2); }
+    input[type="range"].mv-range::-moz-range-thumb {
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 2px solid white;
+      box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    }
+
+    .mv-slider-sub {
+      font-size: 11px;
+      color: var(--mv-text-muted);
+      line-height: 1.4;
+    }
+
+    /* ── Right panel ── */
+    .mv-chart-panel {
+      padding: 28px 28px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .mv-chart-title {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--mv-text-muted);
+    }
+
+    .mv-canvas-wrap { position: relative; width: 100%; }
+    canvas#mv-canvas { width: 100%; display: block; }
+
+    /* ── Result badge ── */
+    .mv-result {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 16px 20px;
+    background: color-mix(in srgb, var(--primary) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--primary) 20%, transparent);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    }
+
+    .mv-result-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    gap: 2px;
+    }
+
+    .mv-result-stat:first-child {
+    padding-left: 4px;
+    }
+
+    .mv-result-num {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1;
+    white-space: nowrap;
+    }
+
+    .mv-result-stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--mv-text-muted);
+    white-space: nowrap;
+    }
+
+    .mv-result-divider {
+    width: 1px;
+    height: 44px;
+    background: color-mix(in srgb, var(--primary) 30%, transparent);
+    flex-shrink: 0;
+    }
+
+    .mv-result-desc {
+    font-size: 13px;
+    color: var(--mv-text);
+    line-height: 1.5;
+    border-left: none;
+    flex: 1;
+    min-width: 160px;
+    }
+
+    .mv-result-desc span {
+    font-size: 11px;
+    opacity: .65;
+    }
+
+    .mv-result-label strong { font-weight: 600; }
+
+    /* ── Legend ── */
+    .mv-legend {
+      display: flex;
+      margin-top: -15px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .mv-leg-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: var(--mv-text-muted);
+    }
+
+    .mv-leg-dash {
+      width: 20px;
+      height: 2px;
+      border-top: 2px dashed;
+    }
+
+    .mv-leg-solid {
+      width: 20px;
+      height: 3px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+    <div id="main-header-placeholder"></div>
+    <div id="research" class="page-content active">
+        <div class="company-container">
+            <div class="mission-section">
+                <h1>The Case for Multimodal Transit</h1>
+                <p style="max-width: 1000px;">This 5 minute read covers what multimodal is, how it saves money, and what makes Modal different</p>
+            </div>
+
+            <div class="plain-wide" id="what-is-multimodal">
+                <h2>What is Multimodal?</h2>
+                <p>Multimodal transit is the use of multiple modes of transportation for a single trip.  In Modal's context, this means combining on-demand microtransit with fixed route bus:</p>
+                <div class="comparison-grid-multimodal">
+                    <div class="comparison-box">
+                        <h3>Microtransit</h3>
+                        <img src="Static/microtransit_wide.svg" alt="Microtransit">
+                        <div class="comparison-caption">
+                            <div class="icon-line">
+                                <svg class="icon-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                <span><b>On-demand</b></span>
+                            </div>
+                            <div class="icon-line">
+                                <svg class="icon-x" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/>
+                                </svg>
+                                <span><b>Very expensive ($$$$)</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-box">
+                        <h3>Fixed Route (Bus, Rail)</h3>
+                        <img src="Static/fixed_route_wide.svg" alt="Fixed Routes">
+                        <div class="comparison-caption">
+                            <div class="icon-line">
+                                <svg class="icon-x" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/>
+                                </svg>
+                                <span><b>No first/last mile</b></span>
+                            </div>
+                            <div class="icon-line">
+                                <svg class="icon-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                <span><b>Inexpensive ($)</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-box comp-box-highlight">
+                        <h3>Multimodal</h3>
+                        <img src="Static/multimodal_wide.svg" alt="Multimodal - the Modal Mobility solution">
+                        <div class="comparison-caption">
+                            <div class="icon-line">
+                                <svg class="icon-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                <span><b>On-demand</b></span>
+                            </div>
+                            <div class="icon-line">
+                                <svg class="icon-check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                <span><b>Affordable ($$)</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Multimodal combines the best of both.  Riders use microtransit for the 'first mile' to get to fixed routes, spend most of their trip on lower-cost bus or rail, and then transfer back to microtransit for the 'last mile' to their exact destination - door to door service at a low cost.</p>
+                <p id="calculator"></p>
+            </div>
+
+            <div class="plain-wide" style="margin-top: 2em; margin-bottom: 4em;">
+                <h2>How Does Multimodal Save Money?</h2>
+                <p style="text-align: center;">Try for yourself - input your data to get an estimate of how multimodal reduces your cost per rider.</p>
+                <div class="mv-widget" id="mv-widget">
+                    <div class="mv-layout">
+                        <div class="mv-panel">
+                        <div class="mv-panel-title">Parameters</div>
+
+                        <div class="mv-field">
+                            <label for="mv-micro">Microtransit Cost Per Rider</label>
+                            <div class="mv-field-row">
+                            <span>$</span>
+                            <input type="number" id="mv-micro" value="50" min="1" step="1" />
+                            <span>/rider</span>
+                            </div>
+                        </div>
+                        <div class="mv-field">
+                            <label for="mv-fixed">Fixed Route Cost Per Rider</label>
+                            <div class="mv-field-row">
+                            <span>$</span>
+                            <input type="number" id="mv-fixed" value="5" min="1" step="1" />
+                            <span>/rider</span>
+                            </div>
+                        </div>
+
+                        <div class="mv-slider-wrap">
+                            <div class="mv-slider-header">
+                            <label for="mv-pct">% Time on Fixed Route</label>
+                            <span class="mv-slider-val" id="mv-pct-val">50%</span>
+                            </div>
+                            <input type="range" class="mv-range" id="mv-pct" min="60" max="90" value="75" />
+                            <div class="mv-slider-sub">How much of the travel time is served by fixed-route transit.</div>
+                        </div>
+                        <div class="mv-slider-wrap">
+                            <div class="mv-slider-header">
+                            <label for="mv-penalty">Trip Duration Difference</label>
+                            <span class="mv-slider-val" id="mv-penalty-val">1.25×</span>
+                            </div>
+                            <input type="range" class="mv-range" id="mv-penalty" min="100" max="150" value="125" />
+                            <div class="mv-slider-sub">Extra travel time for multimodal vs. pure microtransit (1.0× = same duration, 1.5× = 50% longer trip).</div>
+                        </div>
+                        </div>
+
+                        <div class="mv-chart-panel">
+                        <div class="mv-chart-title">Cost per rider</div>
+
+                        <div class="mv-canvas-wrap">
+                            <canvas id="mv-canvas" height="220"></canvas>
+                        </div>
+
+                        <div class="mv-legend">
+                            <div class="mv-leg-item">
+                                <div class="mv-leg-dash" style="border-color: var(--dark); opacity:.45;"></div>
+                                Traditional Microtransit
+                            </div>
+                            <div class="mv-leg-item">
+                                <div class="mv-leg-solid" style="background: var(--primary);"></div>
+                                Multimodal
+                            </div>
+                        </div>
+
+                        <div class="mv-result">
+                            <div class="mv-result-stat">
+                                <div class="mv-result-num" id="mv-result-pct">—</div>
+                                <div class="mv-result-stat-label">cost reduction</div>
+                            </div>
+                            <div class="mv-result-divider"></div>
+                            <div class="mv-result-stat">
+                                <div class="mv-result-num" id="mv-result-num">—</div>
+                                <div class="mv-result-stat-label">lower cost per rider</div>
+                            </div>
+                            <div class="mv-result-desc">
+                                with multimodal vs. traditional microtransit<br>
+                                <span id="mv-result-sub"></span>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="plain-wide">
+                <h2>So, Where's the Friction?</h2>
+                <p>The answer is simple: <b>the transfers</b>.</p>
+                <p>In a traditional microtransit system, there are no transfers - just a direct, expensive ride.  Transfers introduce massive complexity into the optimization problem.  Without <a class="olink" href="research.html">top-notch optimization</a>, trip duration spikes and the cost savings are less pronounced.</p>
+                <div class="tag tag-mm">
+                    <i>Try it: adjust the trip duration and time on fixed route sliders to see the difference optimization makes.</i>
+                </div>
+                <p>This added complexity is a major optimization challenge.  While competitors offer multimodal features, Modal is the only platform purpose-built for multimodal.  Instead of focusing solely on offering transfers, we've spent eight years developing the algorithms for synchronized multimodal at scale.</p>
+                <p>Modal's optimization delivers lower travel and wait times, making multimodal cost savings larger:</p>
+                <div class="stats" style="margin-top: 1rem; margin-bottom: 1rem;">
+                    <a href="case-studies" class="no-ul">
+                        <div class="stat hover-primary">
+                            <img src="Static/um_logo.png" alt="University of Michigan pilot done by Modal Mobility engineers" class="stat-logo">
+                            <div class="stat-number">3 min</div>
+                            <div class="stat-label">average wait time</div>
+                            <p class="stat-link">See how Michigan did it <img src="Static/arrow.svg" class="arrow"></p>
+                        </div>
+                    </a>
+                    <a href="case-studies" class="no-ul">
+                        <div class="stat hover-primary">
+                            <img src="Static/cat_logo.png" alt="CAT pilot done by Modal Mobility engineers" class="stat-logo">
+                            <div class="stat-number">49%</div>
+                            <div class="stat-label">reduction in travel time</div>
+                            <p class="stat-link">See how CAT did it <img src="Static/arrow.svg" class="arrow"></p>
+                        </div>
+                    </a>
+                    <a href="case-studies" class="no-ul">
+                        <div class="stat hover-primary">
+                            <img src="Static/marta_logo.png" alt="MARTA Reach pilot done by Modal Mobility engineers" class="stat-logo">
+                            <div class="stat-number">7 min</div>
+                            <div class="stat-label">average wait time</div>
+                            <p class="stat-link">See how MARTA did it <img src="Static/arrow.svg" class="arrow"></p>
+                        </div>
+                    </a>
+                </div>
+                <p>The results are clear: Modal's optimization delivers significantly lower cost per rider at scale.</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="contact" class="btn-primary">
+                    Run the Numbers for Your System
+                    <span><img src="Static/arrow.svg" class="arrow"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="main-footer-placeholder"></div>
+    <script src="scripts.js"></script>
+</body>
+<script src="multimodal.js" defer></script>
+</body>
+</html>
