@@ -158,7 +158,7 @@
     document.getElementById('mv-result-pct').textContent = pctSavings + '%';
     resultNum.textContent = savingsMultiple.toFixed(2) + '×';
     resultSub.textContent =
-      `Area A (baseline): $${areaA.toFixed(2)} · Area B (multimodal): $${areaB.toFixed(2)}`;
+      `Traditional Microtransit: $${areaA.toFixed(2)} · Multimodal: $${areaB.toFixed(2)}`;
   }
 
   /* ── Slider display updates ── */
