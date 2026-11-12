@@ -6,7 +6,7 @@
     background: var(--light-bg);
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding-top: calc(80px + var(--announcement-height, 0px));
 }
 
 .hero p {

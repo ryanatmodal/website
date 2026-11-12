@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-margin-top: 80px;
+    scroll-margin-top: calc(80px + var(--announcement-height, 0px));
 }
 
 :root {
@@ -61,9 +61,30 @@ a:visited {
     color: inherit;
 }
 
-nav {
+.announcement-bar {
+    background: var(--primary);
+    text-align: center;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
     position: fixed;
     top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.announcement-bar a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.announcement-bar a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    position: fixed;
+    top: 34px;
     width: 100%;
     background: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -189,7 +210,7 @@ nav {
 
 /* Contact */
 .contact-container {
-    padding: 8rem 2rem 4rem;
+    padding: calc(8rem + var(--announcement-height, 0px)) 2rem 4rem;
     max-width: 800px;
     margin: 0 auto;
 }

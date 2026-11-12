@@ -1,10 +1,35 @@
+const SHOW_ANNOUNCEMENT = false;
+
 fetch('Modular/header.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('main-header-placeholder').innerHTML = data;
         initHamburgerMenu();
+
+        const bar = document.getElementById('announcement-bar');
+        if (!SHOW_ANNOUNCEMENT && bar) {
+            bar.remove();
+        }
+
+        adjustForAnnouncement();
+        window.addEventListener('resize', adjustForAnnouncement);
     })
     .catch(error => console.error('Error loading header:', error));
+
+function adjustForAnnouncement() {
+    requestAnimationFrame(() => {
+        const bar = document.getElementById('announcement-bar');
+        const nav = document.querySelector('nav');
+        if (bar && nav && SHOW_ANNOUNCEMENT) {
+            const barHeight = bar.offsetHeight;
+            nav.style.top = barHeight + 'px';
+            document.documentElement.style.setProperty('--announcement-height', barHeight + 'px');
+        } else {
+            if (nav) nav.style.top = '0';
+            document.documentElement.style.setProperty('--announcement-height', '0px');
+        }
+    });
+}
 
 fetch('Modular/footer.html')
         .then(response => response.text())

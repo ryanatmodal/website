@@ -39,7 +39,7 @@
     .pricing-container,
     .contact-container,
     .legal-container {
-        padding: 6rem 1.5rem 3rem !important;
+        padding: calc(6rem + var(--announcement-height, 0px)) 1.5rem 3rem !important;
     }
 
     .product-features {
@@ -51,7 +51,7 @@
     }
 
     .company-container {
-        padding: 6rem 0 1.5rem !important;
+        padding: calc(6rem + var(--announcement-height, 0px)) 0 1.5rem !important;
     }
     
     .plain-wide,
@@ -208,7 +208,7 @@
 
     /* Hero and large sections */
     .hero {
-        padding-top: 70px !important;
+        padding-top: calc(70px + var(--announcement-height, 0px)) !important;
     }
     
     .hero-content {
