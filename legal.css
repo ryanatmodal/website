@@ -31,7 +31,8 @@
 
 /* Careers */
 .careers-container {
-    padding: calc(8rem + var(--announcement-height, 0px)) 2rem 4rem;
+    padding: 8rem 2rem 4rem;
+    padding-top: calc(8rem + var(--announcement-height, 0px));
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -64,6 +65,7 @@
 /* Legal Pages */
 .legal-container {
     padding: 8rem 2rem 4rem;
+    padding-top: calc(8rem + var(--announcement-height, 0px));
     max-width: 900px;
     margin: 0 auto;
 }

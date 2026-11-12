@@ -177,7 +177,8 @@
 
 /* Company Pages */
 .company-container {
-    padding: calc(8rem + var(--announcement-height, 0px)) 0rem 0rem;
+    padding: 8rem 0rem;
+    padding-top: calc(8rem + var(--announcement-height, 0px));
     max-width: var(--max-width);
     margin: 0 auto;
 }

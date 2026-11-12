@@ -210,7 +210,8 @@ nav {
 
 /* Contact */
 .contact-container {
-    padding: calc(8rem + var(--announcement-height, 0px)) 2rem 4rem;
+    padding: 8rem 2rem 4rem;
+    padding-top: calc(8rem + var(--announcement-height, 0px));
     max-width: 800px;
     margin: 0 auto;
 }
